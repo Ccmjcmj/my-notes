@@ -45,17 +45,17 @@ export default defineConfig({
           text: '前端基础',
           items: [
             { text: '概述', link: '/docs/base/' },
-            { text: 'HTML', link: '/docs/base/html' },
-            { text: 'CSS', link: '/docs/base/css' },
-            { text: 'JavaScript', link: '/docs/base/javascript' },
-            { text: '浏览器与网络', link: '/docs/base/browser-network' },
-            { text: '请求与存储', link: '/docs/base/request-storage' },
+            { text: '📚 🔴 HTML', link: '/docs/base/html' },
+            { text: '📚 🔴 CSS', link: '/docs/base/css' },
+            { text: '📚 🔴 JavaScript', link: '/docs/base/javascript' },
+            { text: '📚 🔴 浏览器与网络', link: '/docs/base/browser-network' },
+            { text: '📚 🔴 请求与存储', link: '/docs/base/request-storage' },
             {
-              text: 'TypeScript 入门',
+              text: '📚 🔴 TypeScript 入门',
               collapsed: false,
               items: [
                 { text: '概述', link: '/docs/base/typescript/' },
-                { text: "1 TS 基础体系",
+                { text: "🔴 1 TS 基础体系",
                                   items: [
                                     { text: "1.1 原始类型 & 顶层类型",
                                       items: [
@@ -88,7 +88,7 @@ export default defineConfig({
                                      }
                                   ],
                                  },
-                { text: "2 类型定义核心语法 🔥",
+                { text: "🔴 2 类型定义核心语法",
                                   items: [
                                     { text: "2.1 Interface 接口",
                                       items: [
@@ -131,7 +131,7 @@ export default defineConfig({
                                      }
                                   ],
                                  },
-                { text: "3 类型运算与类型体操 🔥",
+                { text: "🔴 3 类型运算与类型体操",
                                   items: [
                                     { text: "3.1 联合类型 |、交叉类型 &",
                                       items: [
@@ -187,7 +187,7 @@ export default defineConfig({
                                      }
                                   ],
                                  },
-                { text: "4 TS 模块、命名空间 & 类型导入导出",
+                { text: "🟡 4 TS 模块、命名空间 & 类型导入导出",
                                   items: [
                                     { text: "4.1 TS 模块系统（ESM）",
                                       items: [
@@ -214,7 +214,7 @@ export default defineConfig({
                                     { text: "4.4 @types 类型包机制", link: "/docs/base/typescript/4-module/at-types" }
                                   ],
                                  },
-                { text: "5 tsconfig.json 配置 🔥",
+                { text: "🔴 5 tsconfig.json 配置",
                                   items: [
                                     { text: "5.1 核心编译选项",
                                       items: [
@@ -242,7 +242,7 @@ export default defineConfig({
                                     { text: "5.4 tsconfig 继承 extends", link: "/docs/base/typescript/5-tsconfig/extends" }
                                   ],
                                  },
-                { text: "6 TS 与前端框架结合实战",
+                { text: "🔴 6 TS 与前端框架结合实战",
                                   items: [
                                     { text: "6.1 React + TS",
                                       items: [
@@ -272,7 +272,7 @@ export default defineConfig({
                                     { text: "6.4 接口请求类型封装", link: "/docs/base/typescript/6-framework/api-types" }
                                   ],
                                  },
-                { text: "7 TS 高级工程实践、类型质量管控",
+                { text: "🔴 7 TS 高级工程实践、类型质量管控",
                                   items: [
                                     { text: "7.1 类型复用最佳实践",
                                       items: [
@@ -299,7 +299,7 @@ export default defineConfig({
                                     { text: "7.5 Monorepo + TS 多包类型管理 🟡", link: "/docs/base/typescript/7-practice/monorepo-types" }
                                   ],
                                  },
-                { text: "8 进阶拓展 ⚪",
+                { text: "🟢 8 进阶拓展",
                                   collapsed: true,
                                   items: [
                                     { text: "8.1 TS 编译原理基础",
@@ -331,16 +331,16 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/docs/advanced/' },
             {
-              text: '工程化',
+              text: '📚 工程化',
               collapsed: false,
               items: [
                 { text: '概述', link: '/docs/advanced/engineering/' },
                                 {
-                  text: '模块化（基础前提）',
+                  text: '📚 模块化（基础前提）',
                   collapsed: false,
                   items: [
                     { text: '概述', link: '/docs/advanced/engineering/module' },
-                    { text: "1 模块化基础概念",
+                    { text: "🔴 1 模块化基础概念",
                                           items: [
                                             { text: "1.1 什么是模块化",
                                               items: [
@@ -366,7 +366,7 @@ export default defineConfig({
                                              }
                                           ],
                                          },
-                    { text: "2 四大模块规范核心语法 🔥",
+                    { text: "🔴 2 四大模块规范核心语法",
                                           items: [
                                             { text: "2.1 CommonJS（CJS，Node 传统规范）",
                                               items: [
@@ -377,7 +377,7 @@ export default defineConfig({
                                                 { text: "缺点：不支持 Tree-Shaking、浏览器原生不识别", link: "/docs/advanced/engineering/module/2-specs/2-1-commonjs/limitations" }
                                               ],
                                              },
-                                            { text: "2.2 ESM（ES Module，JS 语言标准 🔥）",
+                                            { text: "2.2 ESM（ES Module，JS 语言标准）",
                                               items: [
                                                 { text: "基础导入导出：export、export default、import", link: "/docs/advanced/engineering/module/2-specs/2-2-esm/import-export" },
                                                 { text: "静态特性：编译期解析，不能动态写在条件里", link: "/docs/advanced/engineering/module/2-specs/2-2-esm/static" },
@@ -402,7 +402,7 @@ export default defineConfig({
                                              }
                                           ],
                                          },
-                    { text: "3 ESM 与 CommonJS 核心差异 🔥",
+                    { text: "🔴 3 ESM 与 CommonJS 核心差异",
                                           items: [
                                             { text: "解析时机：静态编译(ESM) vs 运行时(CJS)", link: "/docs/advanced/engineering/module/3-esm-vs-cjs/parse-timing" },
                                             { text: "导出本质：实时绑定 vs 值拷贝", link: "/docs/advanced/engineering/module/3-esm-vs-cjs/export-nature" },
@@ -412,7 +412,7 @@ export default defineConfig({
                                             { text: "Node 下切换 ESM 方式（package.json \"type\":\"module\"）", link: "/docs/advanced/engineering/module/3-esm-vs-cjs/node-esm-switch" }
                                           ],
                                          },
-                    { text: "4 循环依赖问题 🔥",
+                    { text: "🔴 4 循环依赖问题",
                                           items: [
                                             { text: "什么是循环依赖", link: "/docs/advanced/engineering/module/4-circular-dependency/what-is" },
                                             { text: "CommonJS 循环依赖表现（导出 undefined）", link: "/docs/advanced/engineering/module/4-circular-dependency/cjs-behavior" },
@@ -421,7 +421,7 @@ export default defineConfig({
                                             { text: "工程规避方案（抽离公共类型/常量、重构依赖）", link: "/docs/advanced/engineering/module/4-circular-dependency/avoid" }
                                           ],
                                          },
-                    { text: "5 打包工具中的模块处理",
+                    { text: "🔴 5 打包工具中的模块处理",
                                           items: [
                                             { text: "5.1 模块解析机制",
                                               items: [
@@ -449,7 +449,7 @@ export default defineConfig({
                                             { text: "5.4 Rollup 模块特点", link: "/docs/advanced/engineering/module/5-bundler/rollup" }
                                           ],
                                          },
-                    { text: "6 模块类型与 TS / 类型声明 .d.ts",
+                    { text: "🟡 6 模块类型与 TS / 类型声明 .d.ts",
                                           items: [
                                             { text: "模块类型识别（type: module / commonjs）", link: "/docs/advanced/engineering/module/6-ts-dts/module-type" },
                                             { text: "类型导入 import type", link: "/docs/advanced/engineering/module/6-ts-dts/import-type" },
@@ -457,7 +457,7 @@ export default defineConfig({
                                             { text: "模块导出类型自动生成（declaration）", link: "/docs/advanced/engineering/module/6-ts-dts/declaration" }
                                           ],
                                          },
-                    { text: "7 工程化模块化最佳实践",
+                    { text: "🔴 7 工程化模块化最佳实践",
                                           items: [
                                             { text: "目录分层规范（业务模块、工具模块、组件模块、类型模块）", link: "/docs/advanced/engineering/module/7-best-practices/directory-layer" },
                                             { text: "导出规范：优先命名导出还是默认导出", link: "/docs/advanced/engineering/module/7-best-practices/export-convention" },
@@ -467,7 +467,7 @@ export default defineConfig({
                                             { text: "monorepo 多包模块管理（pnpm workspace）🟡", link: "/docs/advanced/engineering/module/7-best-practices/monorepo" }
                                           ],
                                          },
-                    { text: "8 拓展内容 ⚪",
+                    { text: "🟢 8 拓展内容",
                                           collapsed: true,
                                           items: [
                                             { text: "模块沙箱、运行时模块（SystemJS）", link: "/docs/advanced/engineering/module/8-advanced/systemjs" },
@@ -478,19 +478,19 @@ export default defineConfig({
                                          }
                   ]
                 },
-                { text: '包管理工具', link: '/docs/advanced/engineering/package-manager' },
-                { text: '构建 & 打包工具（核心重点）', link: '/docs/advanced/engineering/bundler' },
-                { text: '代码质量 & 规范', link: '/docs/advanced/engineering/code-quality' },
-                { text: '框架工程体系', link: '/docs/advanced/engineering/framework' },
-                { text: '环境、配置与部署', link: '/docs/advanced/engineering/env-deploy' },
-                { text: '高级工程化方向（进阶）', link: '/docs/advanced/engineering/advanced' }
+                { text: '📚 🔴 包管理工具', link: '/docs/advanced/engineering/package-manager' },
+                { text: '📚 🔴 构建 & 打包工具', link: '/docs/advanced/engineering/bundler' },
+                { text: '📚 🔴 代码质量 & 规范', link: '/docs/advanced/engineering/code-quality' },
+                { text: '📚 🟡 框架工程体系', link: '/docs/advanced/engineering/framework' },
+                { text: '📚 🟡 环境、配置与部署', link: '/docs/advanced/engineering/env-deploy' },
+                { text: '📚 🟢 高级工程化方向', link: '/docs/advanced/engineering/advanced' }
               ]
             },
-            { text: '设计模式', link: '/docs/advanced/design-pattern' },
-            { text: '性能优化', link: '/docs/advanced/performance-optimization' },
-            { text: '安全性', link: '/docs/advanced/security' },
-            { text: '架构设计', link: '/docs/advanced/architecture-design' },
-            { text: '代码规范', link: '/docs/advanced/code-style' }
+            { text: '📚 🔴 设计模式', link: '/docs/advanced/design-pattern' },
+            { text: '📚 🔴 性能优化', link: '/docs/advanced/performance-optimization' },
+            { text: '📚 🔴 安全性', link: '/docs/advanced/security' },
+            { text: '📚 🔴 架构设计', link: '/docs/advanced/architecture-design' },
+            { text: '📚 🟡 代码规范', link: '/docs/advanced/code-style' }
           ]
         }
       ],
@@ -499,17 +499,17 @@ export default defineConfig({
           text: '前端应用',
           items: [
             { text: '概述', link: '/docs/application/' },
-            { text: '框架实战踩坑', link: '/docs/application/framework-pitfalls' },
-            { text: '状态与路由落地', link: '/docs/application/state-routing' },
-            { text: '接口与鉴权', link: '/docs/application/api-auth' },
-            { text: '样式与移动端适配', link: '/docs/application/style-mobile' },
-            { text: '性能体验 checklist', link: '/docs/application/performance-checklist' },
-            { text: '工程协作与发布', link: '/docs/application/engineering-release' },
-            { text: '安全与监控', link: '/docs/application/security-monitoring' },
-            { text: '业务权限与复杂表单', link: '/docs/application/permission-forms' },
-            { text: '组件库与中后台表格', link: '/docs/application/component-tables' },
-            { text: '微前端与 WebView', link: '/docs/application/microfrontend-webview' },
-            { text: '测试与线上排查', link: '/docs/application/testing-troubleshooting' }
+            { text: '📚 🔴 框架实战踩坑', link: '/docs/application/framework-pitfalls' },
+            { text: '📚 🔴 状态与路由落地', link: '/docs/application/state-routing' },
+            { text: '📚 🔴 接口与鉴权', link: '/docs/application/api-auth' },
+            { text: '📚 🔴 样式与移动端适配', link: '/docs/application/style-mobile' },
+            { text: '📚 🔴 性能体验 checklist', link: '/docs/application/performance-checklist' },
+            { text: '📚 🔴 工程协作与发布', link: '/docs/application/engineering-release' },
+            { text: '📚 🔴 安全与监控', link: '/docs/application/security-monitoring' },
+            { text: '📚 🔴 业务权限与复杂表单', link: '/docs/application/permission-forms' },
+            { text: '📚 🔴 组件库与中后台表格', link: '/docs/application/component-tables' },
+            { text: '📚 🟡 微前端与 WebView', link: '/docs/application/microfrontend-webview' },
+            { text: '📚 🟢 测试与线上排查', link: '/docs/application/testing-troubleshooting' }
           ]
         }
       ],
@@ -518,15 +518,15 @@ export default defineConfig({
           text: '后端基础',
           items: [
             { text: '概述', link: '/docs/backend/' },
-            { text: 'Java 语言基础', link: '/docs/backend/java-basics' },
-            { text: '构建工具与工程结构', link: '/docs/backend/build-structure' },
-            { text: 'Spring / Spring Boot', link: '/docs/backend/spring-boot' },
-            { text: 'Spring MVC 与接口设计', link: '/docs/backend/spring-mvc' },
-            { text: 'MyBatis 与数据库', link: '/docs/backend/mybatis' },
-            { text: '事务与基础 SQL', link: '/docs/backend/transaction-sql' },
-            { text: '认证授权入门', link: '/docs/backend/auth' },
-            { text: 'Redis 入门', link: '/docs/backend/redis' },
-            { text: '日志、测试与多环境', link: '/docs/backend/logging-testing' }
+            { text: '📚 🔴 Java 语言基础', link: '/docs/backend/java-basics' },
+            { text: '📚 🟡 构建工具与工程结构', link: '/docs/backend/build-structure' },
+            { text: '📚 🔴 Spring / Spring Boot', link: '/docs/backend/spring-boot' },
+            { text: '📚 🔴 Spring MVC 与接口设计', link: '/docs/backend/spring-mvc' },
+            { text: '📚 🔴 MyBatis 与数据库', link: '/docs/backend/mybatis' },
+            { text: '📚 🔴 事务与基础 SQL', link: '/docs/backend/transaction-sql' },
+            { text: '📚 🔴 认证授权入门', link: '/docs/backend/auth' },
+            { text: '📚 🔴 Redis 入门', link: '/docs/backend/redis' },
+            { text: '📚 🟡 日志、测试与多环境', link: '/docs/backend/logging-testing' }
           ]
         }
       ],
@@ -535,16 +535,16 @@ export default defineConfig({
           text: '后端进阶',
           items: [
             { text: '概述', link: '/docs/backend-advanced/' },
-            { text: 'JVM 与性能调优', link: '/docs/backend-advanced/jvm-tuning' },
-            { text: '并发编程进阶', link: '/docs/backend-advanced/concurrency' },
-            { text: '缓存与高并发设计', link: '/docs/backend-advanced/cache-concurrency' },
-            { text: '数据库进阶与分库分表', link: '/docs/backend-advanced/database-sharding' },
-            { text: '消息队列与最终一致性', link: '/docs/backend-advanced/mq-consistency' },
-            { text: '微服务架构', link: '/docs/backend-advanced/microservices' },
-            { text: '分布式事务与服务治理', link: '/docs/backend-advanced/distributed-tx' },
-            { text: '安全进阶', link: '/docs/backend-advanced/security' },
-            { text: '容器化与部署', link: '/docs/backend-advanced/container-deploy' },
-            { text: '可观测性', link: '/docs/backend-advanced/observability' }
+            { text: '📚 🔴 JVM 与性能调优', link: '/docs/backend-advanced/jvm-tuning' },
+            { text: '📚 🔴 并发编程进阶', link: '/docs/backend-advanced/concurrency' },
+            { text: '📚 🔴 缓存与高并发设计', link: '/docs/backend-advanced/cache-concurrency' },
+            { text: '📚 🔴 数据库进阶与分库分表', link: '/docs/backend-advanced/database-sharding' },
+            { text: '📚 🔴 消息队列与最终一致性', link: '/docs/backend-advanced/mq-consistency' },
+            { text: '📚 🔴 微服务架构', link: '/docs/backend-advanced/microservices' },
+            { text: '📚 🟡 分布式事务与服务治理', link: '/docs/backend-advanced/distributed-tx' },
+            { text: '📚 🟡 安全进阶', link: '/docs/backend-advanced/security' },
+            { text: '📚 🟡 容器化与部署', link: '/docs/backend-advanced/container-deploy' },
+            { text: '📚 🟡 可观测性', link: '/docs/backend-advanced/observability' }
           ]
         }
       ],
@@ -553,14 +553,14 @@ export default defineConfig({
           text: '后端应用',
           items: [
             { text: '概述', link: '/docs/backend-application/' },
-            { text: '接口契约与幂等', link: '/docs/backend-application/api-idempotent' },
-            { text: '事务失效与数据一致性', link: '/docs/backend-application/transaction-consistency' },
-            { text: '订单 / 库存 / 金额落地', link: '/docs/backend-application/order-inventory' },
-            { text: '缓存双写与热点问题', link: '/docs/backend-application/cache-pitfalls' },
-            { text: '鉴权越权与安全实践', link: '/docs/backend-application/auth-security' },
-            { text: 'MQ 与定时任务踩坑', link: '/docs/backend-application/mq-jobs' },
-            { text: '发布变更与回滚', link: '/docs/backend-application/release-rollback' },
-            { text: '排查协作与可观测落地', link: '/docs/backend-application/troubleshooting' }
+            { text: '📚 🔴 接口契约与幂等', link: '/docs/backend-application/api-idempotent' },
+            { text: '📚 🔴 事务失效与数据一致性', link: '/docs/backend-application/transaction-consistency' },
+            { text: '📚 🔴 订单 / 库存 / 金额落地', link: '/docs/backend-application/order-inventory' },
+            { text: '📚 🔴 缓存双写与热点问题', link: '/docs/backend-application/cache-pitfalls' },
+            { text: '📚 🔴 鉴权越权与安全实践', link: '/docs/backend-application/auth-security' },
+            { text: '📚 🔴 MQ 与定时任务踩坑', link: '/docs/backend-application/mq-jobs' },
+            { text: '📚 🔴 发布变更与回滚', link: '/docs/backend-application/release-rollback' },
+            { text: '📚 🟡 排查协作与可观测落地', link: '/docs/backend-application/troubleshooting' }
           ]
         }
       ],
@@ -569,144 +569,758 @@ export default defineConfig({
           text: '计算机体系知识',
           items: [
             { text: '概述', link: '/docs/computer-system/' },
-            { text: '数据结构与算法', link: '/docs/computer-system/data-structures-algorithms' },
-            { text: '计算机组成 + 程序底层', link: '/docs/computer-system/computer-organization' },
-            { text: '操作系统', link: '/docs/computer-system/operating-system' },
             {
-              text: '计算机网络',
+              text: '📚 数据结构与算法',
               collapsed: false,
               items: [
-                { text: '概述', link: '/docs/computer-system/network/' },
+                { text: '概述', link: '/docs/computer-system/dsa/' },
                 {
-                  text: '1 前置基础',
+                  text: '🔴 第一部分：基础理论',
                   items: [
-                    { text: '1.1 TCP/IP 四层模型', link: '/docs/computer-system/network/1-foundation/tcp-ip-model' },
-                    { text: '1.2 OSI 七层模型 🟡', link: '/docs/computer-system/network/1-foundation/osi-model' }
+                    {
+                      text: '1 算法复杂度分析',
+                      items: [
+                        { text: '1.1 时间复杂度', link: '/docs/computer-system/dsa/1-complexity/time-complexity' },
+                        { text: '1.2 空间复杂度', link: '/docs/computer-system/dsa/1-complexity/space-complexity' },
+                        { text: '1.3 最好、最坏、平均复杂度', link: '/docs/computer-system/dsa/1-complexity/best-worst-average' },
+                        { text: '1.4 前端场景：性能判断', link: '/docs/computer-system/dsa/1-complexity/frontend-scenarios' }
+                      ]
+                    }
                   ]
                 },
                 {
-                  text: '2 应用层 🔥',
+                  text: '🔴 第二部分：基础数据结构',
                   items: [
                     {
-                      text: '2.1 HTTP',
+                      text: '1 数组',
                       items: [
-                        { text: 'HTTP 特性：无状态', link: '/docs/computer-system/network/2-application/http/stateless' },
-                        { text: '请求报文、响应报文', link: '/docs/computer-system/network/2-application/http/message' },
-                        { text: '请求方法', link: '/docs/computer-system/network/2-application/http/methods' },
-                        { text: '状态码', link: '/docs/computer-system/network/2-application/http/status-code' },
-                        { text: 'HTTP 缓存', link: '/docs/computer-system/network/2-application/http/cache' },
-                        { text: 'Cookie / Session / Storage', link: '/docs/computer-system/network/2-application/http/storage' },
-                        { text: 'HTTP 版本', link: '/docs/computer-system/network/2-application/http/versions' },
-                        { text: '内容编码 gzip/br', link: '/docs/computer-system/network/2-application/http/encoding' }
+                        { text: '1.1 数组基础特性', link: '/docs/computer-system/dsa/2-structures/1-array/basics' },
+                        { text: '1.2 JS 数组 API 底层特性', link: '/docs/computer-system/dsa/2-structures/1-array/js-api' },
+                        { text: '1.3 场景：扁平化、去重', link: '/docs/computer-system/dsa/2-structures/1-array/scenarios' }
                       ]
                     },
                     {
-                      text: '2.2 HTTPS',
+                      text: '2 链表',
                       items: [
-                        { text: 'HTTP 安全缺陷', link: '/docs/computer-system/network/2-application/https/security-flaws' },
-                        { text: '加密与数字证书', link: '/docs/computer-system/network/2-application/https/crypto-cert' },
-                        { text: 'TLS 握手流程', link: '/docs/computer-system/network/2-application/https/tls-handshake' },
-                        { text: 'HTTP 与 HTTPS 区别', link: '/docs/computer-system/network/2-application/https/http-vs-https' }
+                        { text: '2.1 单向链表', link: '/docs/computer-system/dsa/2-structures/2-linked-list/singly' },
+                        { text: '2.2 双向链表', link: '/docs/computer-system/dsa/2-structures/2-linked-list/doubly' },
+                        { text: '2.3 链表和数组对比', link: '/docs/computer-system/dsa/2-structures/2-linked-list/vs-array' }
                       ]
                     },
                     {
-                      text: '2.3 DNS',
+                      text: '3 栈 Stack',
                       items: [
-                        { text: '域名解析作用', link: '/docs/computer-system/network/2-application/dns/overview' },
-                        { text: '递归查询、迭代查询', link: '/docs/computer-system/network/2-application/dns/query' },
-                        { text: 'DNS 缓存、hosts', link: '/docs/computer-system/network/2-application/dns/cache-hosts' },
-                        { text: 'DNS 劫持 🟡', link: '/docs/computer-system/network/2-application/dns/hijack' }
+                        { text: '3.1 后进先出 LIFO', link: '/docs/computer-system/dsa/2-structures/3-stack/lifo' },
+                        { text: '3.2 前端场景', link: '/docs/computer-system/dsa/2-structures/3-stack/frontend-scenarios' }
                       ]
                     },
                     {
-                      text: '2.4 WebSocket',
+                      text: '4 队列 Queue',
                       items: [
-                        { text: '与 HTTP 关系、握手', link: '/docs/computer-system/network/2-application/websocket/handshake' },
-                        { text: '适用场景', link: '/docs/computer-system/network/2-application/websocket/scenarios' },
-                        { text: '与轮询/长轮询对比', link: '/docs/computer-system/network/2-application/websocket/vs-polling' }
+                        { text: '4.1 先进先出 FIFO', link: '/docs/computer-system/dsa/2-structures/4-queue/fifo' },
+                        { text: '4.2 普通队列', link: '/docs/computer-system/dsa/2-structures/4-queue/basic-queue' },
+                        { text: '4.3 优先队列', link: '/docs/computer-system/dsa/2-structures/4-queue/priority-queue' },
+                        { text: '4.4 前端场景：任务队列', link: '/docs/computer-system/dsa/2-structures/4-queue/frontend-scenarios' }
                       ]
                     },
-                    { text: '2.5 正向代理 & 反向代理', link: '/docs/computer-system/network/2-application/proxy' },
-                    { text: '2.6 其他应用协议 🟡', link: '/docs/computer-system/network/2-application/other-protocols' }
+                    {
+                      text: '5 哈希表',
+                      items: [
+                        { text: '5.1 哈希原理、哈希冲突', link: '/docs/computer-system/dsa/2-structures/5-hash-table/hash-basics' },
+                        { text: '5.2 JS Object / Map / Set', link: '/docs/computer-system/dsa/2-structures/5-hash-table/js-map-set' },
+                        { text: '5.3 场景：去重、两数之和', link: '/docs/computer-system/dsa/2-structures/5-hash-table/scenarios' }
+                      ]
+                    },
+                    {
+                      text: '6 树 ⭐',
+                      items: [
+                        { text: '6.1 树基础概念', link: '/docs/computer-system/dsa/2-structures/6-tree/basics' },
+                        {
+                          text: '6.2 二叉树',
+                          items: [
+                            { text: '前序 / 中序 / 后序', link: '/docs/computer-system/dsa/2-structures/6-tree/traversal/dfs' },
+                            { text: '层序遍历 BFS', link: '/docs/computer-system/dsa/2-structures/6-tree/traversal/bfs' }
+                          ]
+                        },
+                        { text: '6.3 前端业务树', link: '/docs/computer-system/dsa/2-structures/6-tree/frontend-trees' },
+                        { text: '6.4 树的操作', link: '/docs/computer-system/dsa/2-structures/6-tree/tree-operations' }
+                      ]
+                    }
                   ]
                 },
                 {
-                  text: '3 传输层 🔥',
+                  text: '🔴 第三部分：前端必备算法',
                   items: [
                     {
-                      text: '3.1 TCP',
+                      text: '1 递归 ⭐',
                       items: [
-                        { text: 'TCP 特性', link: '/docs/computer-system/network/3-transport/tcp/features' },
-                        { text: '三次握手', link: '/docs/computer-system/network/3-transport/tcp/handshake' },
-                        { text: '四次挥手', link: '/docs/computer-system/network/3-transport/tcp/wave' },
-                        { text: '滑动窗口', link: '/docs/computer-system/network/3-transport/tcp/sliding-window' },
-                        { text: '拥塞控制 🟡', link: '/docs/computer-system/network/3-transport/tcp/congestion' }
+                        { text: '1.1 递归思想、终止条件', link: '/docs/computer-system/dsa/3-algorithms/1-recursion/basics' },
+                        { text: '1.2 递归爆栈问题', link: '/docs/computer-system/dsa/3-algorithms/1-recursion/stack-overflow' },
+                        { text: '1.3 前端场景：遍历树结构', link: '/docs/computer-system/dsa/3-algorithms/1-recursion/tree-traversal' },
+                        { text: '1.4 尾递归 🟡', link: '/docs/computer-system/dsa/3-algorithms/1-recursion/tail-recursion' }
                       ]
                     },
                     {
-                      text: '3.2 UDP',
+                      text: '2 查找算法',
                       items: [
-                        { text: 'UDP 特性', link: '/docs/computer-system/network/3-transport/udp/features' },
-                        { text: '使用场景', link: '/docs/computer-system/network/3-transport/udp/scenarios' },
-                        { text: 'TCP vs UDP 对比', link: '/docs/computer-system/network/3-transport/udp/vs-tcp' }
+                        { text: '2.1 顺序查找', link: '/docs/computer-system/dsa/3-algorithms/2-search/linear' },
+                        { text: '2.2 二分查找', link: '/docs/computer-system/dsa/3-algorithms/2-search/binary' }
                       ]
                     },
-                    { text: '3.3 端口、Socket、多路分用', link: '/docs/computer-system/network/3-transport/port-socket' }
+                    {
+                      text: '3 基础排序算法',
+                      items: [
+                        { text: '3.1 冒泡排序', link: '/docs/computer-system/dsa/3-algorithms/3-sort/bubble' },
+                        { text: '3.2 选择排序', link: '/docs/computer-system/dsa/3-algorithms/3-sort/selection' },
+                        { text: '3.3 插入排序', link: '/docs/computer-system/dsa/3-algorithms/3-sort/insertion' },
+                        { text: '3.4 快速排序', link: '/docs/computer-system/dsa/3-algorithms/3-sort/quick' },
+                        { text: '3.5 归并排序', link: '/docs/computer-system/dsa/3-algorithms/3-sort/merge' },
+                        { text: '3.6 JS sort 底层原理', link: '/docs/computer-system/dsa/3-algorithms/3-sort/js-sort' }
+                      ]
+                    }
                   ]
                 },
                 {
-                  text: '4 网络层 🟡',
+                  text: '🔴 第四部分：前端业务高频算法题',
+                  items: [
+                    { text: '1 数组类', link: '/docs/computer-system/dsa/4-business-problems/array' },
+                    { text: '2 树类', link: '/docs/computer-system/dsa/4-business-problems/tree' },
+                    { text: '3 字符串类', link: '/docs/computer-system/dsa/4-business-problems/string' },
+                    { text: '4 栈应用：有效括号', link: '/docs/computer-system/dsa/4-business-problems/stack' },
+                    { text: '5 动态规划简单入门 🟡', link: '/docs/computer-system/dsa/4-business-problems/dp-intro' }
+                  ]
+                },
+                {
+                  text: '🟡 第五部分：不建议深挖',
                   collapsed: true,
                   items: [
-                    { text: 'IP 协议', link: '/docs/computer-system/network/4-network-layer/ip' },
-                    { text: 'ICMP（ping 原理）', link: '/docs/computer-system/network/4-network-layer/icmp' },
-                    { text: 'ARP 🟡', link: '/docs/computer-system/network/4-network-layer/arp' }
+                    { text: '1 红黑树、AVL 树', link: '/docs/computer-system/dsa/5-optional/balanced-trees' },
+                    { text: '2 图、图的遍历', link: '/docs/computer-system/dsa/5-optional/graph' },
+                    { text: '3 复杂动态规划、贪心难题', link: '/docs/computer-system/dsa/5-optional/hard-dp-greedy' },
+                    { text: '4 大量困难 LeetCode', link: '/docs/computer-system/dsa/5-optional/hard-leetcode' }
                   ]
                 },
                 {
-                  text: '5 链路层 ⚪',
-                  collapsed: true,
+                  text: '📌 学习建议',
                   items: [
-                    { text: 'MAC 地址', link: '/docs/computer-system/network/5-link-layer/mac' },
-                    { text: '以太网基础', link: '/docs/computer-system/network/5-link-layer/ethernet' }
-                  ]
-                },
-                {
-                  text: '6 前端工程 & 性能实战 🔥',
-                  items: [
-                    { text: '6.1 浏览器完整请求生命周期', link: '/docs/computer-system/network/6-frontend-practice/request-lifecycle' },
-                    {
-                      text: '6.2 资源加载优化',
-                      items: [
-                        { text: 'CDN', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/cdn' },
-                        { text: 'preload / preconnect / prefetch', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/preload' },
-                        { text: '分包、懒加载', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/code-splitting' }
-                      ]
-                    },
-                    {
-                      text: '6.3 抓包工具',
-                      items: [
-                        { text: 'Chrome DevTools Network', link: '/docs/computer-system/network/6-frontend-practice/packet-capture/devtools' },
-                        { text: 'Whistle / Fiddler ⚪', link: '/docs/computer-system/network/6-frontend-practice/packet-capture/whistle-fiddler' }
-                      ]
-                    },
-                    { text: '6.4 线上问题排查', link: '/docs/computer-system/network/6-frontend-practice/troubleshooting' }
-                  ]
-                },
-                {
-                  text: '7 拓展内容 ⚪',
-                  collapsed: true,
-                  items: [
-                    { text: '负载均衡、网关', link: '/docs/computer-system/network/7-advanced/load-balancer-gateway' },
-                    { text: '前端安全 XSS、CSRF', link: '/docs/computer-system/network/7-advanced/frontend-security' }
+                    { text: '1 先学数据结构，再刷算法', link: '/docs/computer-system/dsa/6-learning-tips/structure-first' },
+                    { text: '2 优先刷和业务相关题目', link: '/docs/computer-system/dsa/6-learning-tips/business-first' },
+                    { text: '3 学习目标', link: '/docs/computer-system/dsa/6-learning-tips/goals' }
                   ]
                 }
               ]
             },
-            { text: '编译原理', link: '/docs/computer-system/compilers' },
-            { text: '程序员的自我修养：链接、装载与库', link: '/docs/computer-system/linkers-loaders' },
-            { text: '数据库系统概念', link: '/docs/computer-system/database-systems' },
-            { text: '深入 Linux 内核架构', link: '/docs/computer-system/linux-kernel' }
+            {
+              text: '📚 计算机组成 + 程序底层',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/computer-org/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 存储层次体系 ⭐',
+                      items: [
+                        { text: '1.1 存储器层级', link: '/docs/computer-system/computer-org/1-storage/hierarchy' },
+                        { text: '1.2 Cache 高速缓存原理', link: '/docs/computer-system/computer-org/1-storage/cache' },
+                        { text: '1.3 内存与缓存的性能差距', link: '/docs/computer-system/computer-org/1-storage/memory-cache-gap' },
+                        { text: '1.4 前端关联：V8 内存、GC', link: '/docs/computer-system/computer-org/1-storage/frontend-v8-gc' }
+                      ]
+                    },
+                    {
+                      text: '2 内存基础',
+                      items: [
+                        { text: '2.1 寻址、字节、位、字', link: '/docs/computer-system/computer-org/2-memory/addressing' },
+                        { text: '2.2 大端 / 小端', link: '/docs/computer-system/computer-org/2-memory/endianness' },
+                        { text: '2.3 虚拟内存 & 物理内存', link: '/docs/computer-system/computer-org/2-memory/virtual-physical' }
+                      ]
+                    },
+                    {
+                      text: '3 CPU 基础概念',
+                      items: [
+                        { text: '3.1 CPU 核心、超线程', link: '/docs/computer-system/computer-org/3-cpu/cores-hyperthreading' },
+                        { text: '3.2 指令、指令集', link: '/docs/computer-system/computer-org/3-cpu/instructions' },
+                        { text: '3.3 并行与并发', link: '/docs/computer-system/computer-org/3-cpu/parallel-concurrency' }
+                      ]
+                    },
+                    {
+                      text: '4 输入输出 I/O',
+                      items: [
+                        { text: '4.1 I/O 基本概念', link: '/docs/computer-system/computer-org/4-io/io-basics' },
+                        { text: '4.2 中断', link: '/docs/computer-system/computer-org/4-io/interrupt' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟡 拓展了解',
+                  collapsed: true,
+                  items: [
+                    { text: '1 总线基础概念', link: '/docs/computer-system/computer-org/5-optional/bus' },
+                    { text: '2 磁盘基础（SSD/HDD）', link: '/docs/computer-system/computer-org/5-optional/disk' },
+                    { text: '3 浮点数存储 IEEE754 ⭐', link: '/docs/computer-system/computer-org/5-optional/ieee754' }
+                  ]
+                },
+                {
+                  text: '🟢 可跳过',
+                  collapsed: true,
+                  items: [
+                    { text: '1 运算器、ALU 细节', link: '/docs/computer-system/computer-org/6-skip/alu' },
+                    { text: '2 控制器、指令流水线、分支预测', link: '/docs/computer-system/computer-org/6-skip/pipeline' },
+                    { text: '3 硬件电路、门电路', link: '/docs/computer-system/computer-org/6-skip/gates' },
+                    { text: '4 汇编语言', link: '/docs/computer-system/computer-org/6-skip/assembly' },
+                    { text: '5 各类硬件接口时序', link: '/docs/computer-system/computer-org/6-skip/hardware-timing' }
+                  ]
+                }
+              ]
+            },
+                        {
+              text: '📚 操作系统',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/os/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 进程与线程',
+                      items: [
+                        { text: '1.1 进程基础', link: '/docs/computer-system/os/1-process-thread/process-basics' },
+                        { text: '1.2 浏览器多进程架构', link: '/docs/computer-system/os/1-process-thread/browser-multi-process' },
+                        { text: '1.3 线程基础', link: '/docs/computer-system/os/1-process-thread/thread-basics' },
+                        { text: '1.4 渲染进程内五大线程', link: '/docs/computer-system/os/1-process-thread/render-threads' },
+                        { text: '1.5 并发、并行概念', link: '/docs/computer-system/os/1-process-thread/concurrency-parallelism' }
+                      ]
+                    },
+                    {
+                      text: '2 内存：堆 & 栈',
+                      items: [
+                        { text: '2.1 栈', link: '/docs/computer-system/os/2-memory/stack' },
+                        { text: '2.2 堆', link: '/docs/computer-system/os/2-memory/heap' },
+                        { text: '2.3 V8 堆与 GC 基础', link: '/docs/computer-system/os/2-memory/v8-gc' }
+                      ]
+                    },
+                    {
+                      text: '3 IO 与异步模型',
+                      items: [
+                        { text: '3.1 同步/异步、阻塞/非阻塞', link: '/docs/computer-system/os/3-io-async/sync-async-blocking' },
+                        { text: '3.2 IO 多路复用', link: '/docs/computer-system/os/3-io-async/io-multiplexing' },
+                        { text: '3.3 事件驱动 & Event Loop 底层', link: '/docs/computer-system/os/3-io-async/event-loop' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟡 网络相关 OS',
+                  collapsed: true,
+                  items: [
+                    { text: '4 Socket 套接字', link: '/docs/computer-system/os/4-socket/socket' },
+                    { text: '5 端口', link: '/docs/computer-system/os/5-port/port' }
+                  ]
+                },
+                {
+                  text: '🟢 拓展加分',
+                  collapsed: true,
+                  items: [
+                    { text: '6 CPU 时间片、进程调度', link: '/docs/computer-system/os/6-cpu-scheduling/cpu-scheduling' },
+                    { text: '7 文件描述符基础', link: '/docs/computer-system/os/7-fd/file-descriptor' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '📚 计算机网络',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/network/' },
+                { text: '❓综合性思考', link: '/docs/computer-system/network/0-synthesis/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 前置基础',
+                      items: [
+                        { text: '1.1 TCP/IP 四层模型', link: '/docs/computer-system/network/1-foundation/tcp-ip-model' },
+                        { text: '1.2 OSI 七层模型 🟡', link: '/docs/computer-system/network/1-foundation/osi-model' }
+                      ]
+                    },
+                    {
+                      text: '2 应用层',
+                      items: [
+                        {
+                          text: '2.1 HTTP',
+                          items: [
+                            { text: 'HTTP 特性：无状态', link: '/docs/computer-system/network/2-application/http/stateless' },
+                            { text: '请求报文、响应报文', link: '/docs/computer-system/network/2-application/http/message' },
+                            { text: '请求方法', link: '/docs/computer-system/network/2-application/http/methods' },
+                            { text: '状态码', link: '/docs/computer-system/network/2-application/http/status-code' },
+                            { text: 'HTTP 缓存', link: '/docs/computer-system/network/2-application/http/cache' },
+                            { text: 'Cookie / Session / Storage', link: '/docs/computer-system/network/2-application/http/storage' },
+                            { text: 'HTTP 版本', link: '/docs/computer-system/network/2-application/http/versions' },
+                            { text: '内容编码 gzip/br', link: '/docs/computer-system/network/2-application/http/encoding' }
+                          ]
+                        },
+                        {
+                          text: '2.2 HTTPS',
+                          items: [
+                            { text: 'HTTP 安全缺陷', link: '/docs/computer-system/network/2-application/https/security-flaws' },
+                            { text: '加密与数字证书', link: '/docs/computer-system/network/2-application/https/crypto-cert' },
+                            { text: 'TLS 握手流程', link: '/docs/computer-system/network/2-application/https/tls-handshake' },
+                            { text: 'HTTP 与 HTTPS 区别', link: '/docs/computer-system/network/2-application/https/http-vs-https' }
+                          ]
+                        },
+                        {
+                          text: '2.3 DNS',
+                          items: [
+                            { text: '域名解析作用', link: '/docs/computer-system/network/2-application/dns/overview' },
+                            { text: '递归查询、迭代查询', link: '/docs/computer-system/network/2-application/dns/query' },
+                            { text: 'DNS 缓存、hosts', link: '/docs/computer-system/network/2-application/dns/cache-hosts' },
+                            { text: 'DNS 劫持 🟡', link: '/docs/computer-system/network/2-application/dns/hijack' }
+                          ]
+                        },
+                        {
+                          text: '2.4 WebSocket',
+                          items: [
+                            { text: '与 HTTP 关系、握手', link: '/docs/computer-system/network/2-application/websocket/handshake' },
+                            { text: '适用场景', link: '/docs/computer-system/network/2-application/websocket/scenarios' },
+                            { text: '与轮询/长轮询对比', link: '/docs/computer-system/network/2-application/websocket/vs-polling' }
+                          ]
+                        },
+                        { text: '2.5 正向代理 & 反向代理', link: '/docs/computer-system/network/2-application/proxy' },
+                        { text: '2.6 其他应用协议 🟡', link: '/docs/computer-system/network/2-application/other-protocols' }
+                      ]
+                    },
+                    {
+                      text: '3 传输层',
+                      items: [
+                        {
+                          text: '3.1 TCP',
+                          items: [
+                            { text: 'TCP 特性', link: '/docs/computer-system/network/3-transport/tcp/features' },
+                            { text: '三次握手', link: '/docs/computer-system/network/3-transport/tcp/handshake' },
+                            { text: '四次挥手', link: '/docs/computer-system/network/3-transport/tcp/wave' },
+                            { text: '滑动窗口', link: '/docs/computer-system/network/3-transport/tcp/sliding-window' },
+                            { text: '拥塞控制 🟡', link: '/docs/computer-system/network/3-transport/tcp/congestion' }
+                          ]
+                        },
+                        {
+                          text: '3.2 UDP',
+                          items: [
+                            { text: 'UDP 特性', link: '/docs/computer-system/network/3-transport/udp/features' },
+                            { text: '使用场景', link: '/docs/computer-system/network/3-transport/udp/scenarios' },
+                            { text: 'TCP vs UDP 对比', link: '/docs/computer-system/network/3-transport/udp/vs-tcp' }
+                          ]
+                        },
+                        { text: '3.3 端口、Socket、多路分用', link: '/docs/computer-system/network/3-transport/port-socket' }
+                      ]
+                    },
+                    {
+                      text: '4 网络层',
+                      items: [
+                        {
+                          text: '4.1 IP 地址基础',
+                          items: [
+                            { text: 'IPv4：公网 IP / 私网 IP / localhost', link: '/docs/computer-system/network/4-network-layer/4-1-ip/ipv4-public-private' },
+                            { text: '子网掩码、CIDR', link: '/docs/computer-system/network/4-network-layer/4-1-ip/subnet-cidr' },
+                            { text: 'IPv6 🟡', link: '/docs/computer-system/network/4-network-layer/4-1-ip/ipv6' }
+                          ]
+                        },
+                        {
+                          text: '4.2 NAT 与内外网',
+                          items: [
+                            { text: 'NAT 是什么、为什么内网不能直接对外', link: '/docs/computer-system/network/4-network-layer/4-2-nat/nat-basics' },
+                            { text: '和前端的关系：devServer 代理、内网穿透', link: '/docs/computer-system/network/4-network-layer/4-2-nat/frontend-relation' }
+                          ]
+                        },
+                        {
+                          text: '4.3 路由基础',
+                          items: [
+                            { text: '路由表、下一跳（直观理解）', link: '/docs/computer-system/network/4-network-layer/4-3-routing/routing-basics' },
+                            { text: '和 CDN / 网关 / 跨域部署的关系', link: '/docs/computer-system/network/4-network-layer/4-3-routing/cdn-gateway' }
+                          ]
+                        },
+                        {
+                          text: '4.4 ICMP 与网络诊断',
+                          items: [
+                            { text: 'ping 原理', link: '/docs/computer-system/network/4-network-layer/4-4-icmp/ping' },
+                            { text: 'TTL、traceroute', link: '/docs/computer-system/network/4-network-layer/4-4-icmp/ttl-traceroute' },
+                            { text: '前端排查：网络不通 vs 服务挂了 vs DNS 问题', link: '/docs/computer-system/network/4-network-layer/4-4-icmp/troubleshooting' }
+                          ]
+                        },
+                        {
+                          text: '4.5 ARP 🟡',
+                          items: [
+                            { text: 'ARP 简单了解', link: '/docs/computer-system/network/4-network-layer/4-5-arp/arp-basics' }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      text: '5 前端工程 & 性能实战',
+                      items: [
+                        { text: '5.1 浏览器完整请求生命周期', link: '/docs/computer-system/network/5-frontend-practice/request-lifecycle' },
+                        {
+                          text: '5.2 资源加载优化',
+                          items: [
+                            { text: 'CDN', link: '/docs/computer-system/network/5-frontend-practice/resource-optimization/cdn' },
+                            { text: 'preload / preconnect / prefetch', link: '/docs/computer-system/network/5-frontend-practice/resource-optimization/preload' },
+                            { text: '分包、懒加载', link: '/docs/computer-system/network/5-frontend-practice/resource-optimization/code-splitting' }
+                          ]
+                        },
+                        {
+                          text: '5.3 抓包工具',
+                          items: [
+                            { text: 'Chrome DevTools Network', link: '/docs/computer-system/network/5-frontend-practice/packet-capture/devtools' },
+                            { text: 'Whistle / Fiddler 🟢', link: '/docs/computer-system/network/5-frontend-practice/packet-capture/whistle-fiddler' }
+                          ]
+                        },
+                        { text: '5.4 线上问题排查', link: '/docs/computer-system/network/5-frontend-practice/troubleshooting' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟢 拓展内容',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: '6 链路层',
+                      items: [
+                        { text: 'MAC 地址', link: '/docs/computer-system/network/6-link-layer/mac' },
+                        { text: '以太网基础', link: '/docs/computer-system/network/6-link-layer/ethernet' }
+                      ]
+                    },
+                    {
+                      text: '7 拓展内容',
+                      items: [
+                        { text: '负载均衡、网关', link: '/docs/computer-system/network/7-advanced/load-balancer-gateway' },
+                        { text: '前端安全 XSS、CSRF', link: '/docs/computer-system/network/7-advanced/frontend-security' }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '📚 编译原理',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/compiler/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 编译基础概念',
+                      items: [
+                        { text: '1.1 编译 vs 解释', link: '/docs/computer-system/compiler/1-basics/compile-vs-interpret' },
+                        { text: '1.2 编译三阶段', link: '/docs/computer-system/compiler/1-basics/three-stages' },
+                        { text: '1.3 AST 抽象语法树 ⭐', link: '/docs/computer-system/compiler/1-basics/ast' }
+                      ]
+                    },
+                    {
+                      text: '2 词法分析（Tokenizer）',
+                      items: [
+                        { text: '2.1 词、Token、分词', link: '/docs/computer-system/compiler/2-lexer/token-basics' },
+                        { text: '2.2 JS 源码如何拆成 Token', link: '/docs/computer-system/compiler/2-lexer/js-tokenize' }
+                      ]
+                    },
+                    {
+                      text: '3 语法分析（Parser）',
+                      items: [
+                        { text: '3.1 基于 Token 生成 AST', link: '/docs/computer-system/compiler/3-parser/ast-from-token' },
+                        { text: '3.2 语法报错原理', link: '/docs/computer-system/compiler/3-parser/syntax-error' },
+                        { text: '3.3 简单手写迷你 Parser', link: '/docs/computer-system/compiler/3-parser/mini-parser' }
+                      ]
+                    },
+                    {
+                      text: '4 Babel 完整编译流程 ⭐',
+                      items: [
+                        { text: '4.1 @babel/parser：生成 AST', link: '/docs/computer-system/compiler/4-babel/parser' },
+                        { text: '4.2 @babel/traverse：遍历、修改 AST', link: '/docs/computer-system/compiler/4-babel/traverse' },
+                        { text: '4.3 @babel/generator：AST 转回代码', link: '/docs/computer-system/compiler/4-babel/generator' },
+                        { text: '4.4 @babel/types：节点构造工具', link: '/docs/computer-system/compiler/4-babel/types' },
+                        { text: '4.5 插件、预设 preset 原理', link: '/docs/computer-system/compiler/4-babel/plugins-preset' }
+                      ]
+                    },
+                    {
+                      text: '5 代码转换实战场景',
+                      items: [
+                        { text: '5.1 ES6+ 转 ES5', link: '/docs/computer-system/compiler/5-transformation/es6-to-es5' },
+                        { text: '5.2 TS 转 JS', link: '/docs/computer-system/compiler/5-transformation/ts-to-js' },
+                        { text: '5.3 自动埋点、按需导入、语法降级', link: '/docs/computer-system/compiler/5-transformation/practical-scenarios' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟡 拓展了解',
+                  collapsed: true,
+                  items: [
+                    { text: '1 语义分析基础（作用域、类型检查）', link: '/docs/computer-system/compiler/6-optional/semantic-analysis' },
+                    { text: '2 宏、静态分析（ESLint、Prettier 底层）', link: '/docs/computer-system/compiler/6-optional/static-analysis' },
+                    { text: '3 模板编译（Vue 模板编译、JSX 编译）', link: '/docs/computer-system/compiler/6-optional/template-compilation' },
+                    { text: '4 代码压缩、Tree-Shaking 和 AST 关系', link: '/docs/computer-system/compiler/6-optional/minify-treeshaking' },
+                    { text: '5 JIT 即时编译（V8）', link: '/docs/computer-system/compiler/6-optional/jit-v8' }
+                  ]
+                },
+                {
+                  text: '🟢 可跳过',
+                  collapsed: true,
+                  items: [
+                    { text: '1 正规式、自动机理论（DFA/NFA）', link: '/docs/computer-system/compiler/7-skip/automata' },
+                    { text: '2 LR、LL 语法分析算法细节', link: '/docs/computer-system/compiler/7-skip/lr-ll' },
+                    { text: '3 中间代码 IR、优化、目标机器码', link: '/docs/computer-system/compiler/7-skip/ir-codegen' },
+                    { text: '4 复杂编译器后端、寄存器分配', link: '/docs/computer-system/compiler/7-skip/compiler-backend' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '📚 浏览器专项（前端专属）',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/browser/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 浏览器整体架构',
+                      items: [
+                        { text: '1.1 多进程模型', link: '/docs/computer-system/browser/1-architecture/multi-process' },
+                        { text: '1.2 进程隔离与沙箱机制', link: '/docs/computer-system/browser/1-architecture/sandbox' },
+                        { text: '1.3 渲染进程内部线程', link: '/docs/computer-system/browser/1-architecture/render-threads' }
+                      ]
+                    },
+                    {
+                      text: '2 页面渲染流程 & 渲染阻塞 ⭐',
+                      items: [
+                        { text: '2.1 HTML 解析 → DOM 树', link: '/docs/computer-system/browser/2-rendering/dom-tree' },
+                        { text: '2.2 CSS 解析 → CSSOM 树', link: '/docs/computer-system/browser/2-rendering/cssom-tree' },
+                        { text: '2.3 生成渲染树 Render Tree', link: '/docs/computer-system/browser/2-rendering/render-tree' },
+                        { text: '2.4 布局（回流/重排 reflow）', link: '/docs/computer-system/browser/2-rendering/reflow' },
+                        { text: '2.5 绘制（重绘 repaint）', link: '/docs/computer-system/browser/2-rendering/repaint' },
+                        { text: '2.6 合成图层 composite、GPU 加速', link: '/docs/computer-system/browser/2-rendering/composite-gpu' },
+                        { text: '2.7 JS 阻塞渲染原理', link: '/docs/computer-system/browser/2-rendering/js-blocking' },
+                        { text: '2.8 CSS 阻塞渲染原理', link: '/docs/computer-system/browser/2-rendering/css-blocking' },
+                        { text: '2.9 defer / async / type="module" 脚本加载差异', link: '/docs/computer-system/browser/2-rendering/script-loading' }
+                      ]
+                    },
+                    {
+                      text: '3 资源加载优先级 & 预加载',
+                      items: [
+                        { text: '3.1 浏览器资源加载优先级规则', link: '/docs/computer-system/browser/3-resource-loading/priority-rules' },
+                        { text: '3.2 preload 预加载', link: '/docs/computer-system/browser/3-resource-loading/preload' },
+                        { text: '3.3 prefetch 预获取', link: '/docs/computer-system/browser/3-resource-loading/prefetch' },
+                        { text: '3.4 dns-prefetch / preconnect', link: '/docs/computer-system/browser/3-resource-loading/dns-preconnect' },
+                        { text: '3.5 图片懒加载、原生 loading="lazy"', link: '/docs/computer-system/browser/3-resource-loading/lazy-loading' }
+                      ]
+                    },
+                    {
+                      text: '4 事件循环 Event Loop',
+                      items: [
+                        { text: '4.1 宏任务、微任务区分', link: '/docs/computer-system/browser/4-event-loop/macro-micro-task' },
+                        { text: '4.2 浏览器事件循环执行顺序', link: '/docs/computer-system/browser/4-event-loop/browser-event-loop' },
+                        { text: '4.3 和 Node 事件循环的差异', link: '/docs/computer-system/browser/4-event-loop/node-vs-browser' }
+                      ]
+                    },
+                    {
+                      text: '5 跨页面/跨上下文通信 ⭐',
+                      items: [
+                        { text: '5.1 postMessage', link: '/docs/computer-system/browser/5-communication/post-message' },
+                        { text: '5.2 BroadcastChannel', link: '/docs/computer-system/browser/5-communication/broadcast-channel' },
+                        { text: '5.3 LocalStorage / SessionStorage 存储事件', link: '/docs/computer-system/browser/5-communication/storage-events' },
+                        { text: '5.4 SharedWorker', link: '/docs/computer-system/browser/5-communication/shared-worker' },
+                        { text: '5.5 Service Worker 作为通信中转', link: '/docs/computer-system/browser/5-communication/service-worker-relay' }
+                      ]
+                    },
+                    {
+                      text: '6 页面性能指标与优化',
+                      items: [
+                        { text: '6.1 核心指标：FP/FCP/LCP/CLS/INP', link: '/docs/computer-system/browser/6-performance/core-metrics' },
+                        { text: '6.2 回流重绘优化策略', link: '/docs/computer-system/browser/6-performance/reflow-repaint-opt' },
+                        { text: '6.3 长任务阻塞、Web Worker 解决思路', link: '/docs/computer-system/browser/6-performance/long-tasks-worker' },
+                        { text: '6.4 主线程优化', link: '/docs/computer-system/browser/6-performance/main-thread-opt' }
+                      ]
+                    },
+                    {
+                      text: '7 浏览器安全',
+                      items: [
+                        { text: '7.1 XSS 分类与防御', link: '/docs/computer-system/browser/7-security/xss' },
+                        { text: '7.2 CSRF 原理与防御', link: '/docs/computer-system/browser/7-security/csrf' },
+                        { text: '7.3 同源策略、跨域本质', link: '/docs/computer-system/browser/7-security/same-origin' },
+                        { text: '7.4 CSP 内容安全策略', link: '/docs/computer-system/browser/7-security/csp' }
+                      ]
+                    },
+                    {
+                      text: '8 存储机制',
+                      items: [
+                        { text: '8.1 Cookie', link: '/docs/computer-system/browser/8-storage/cookie' },
+                        { text: '8.2 localStorage / sessionStorage', link: '/docs/computer-system/browser/8-storage/web-storage' },
+                        { text: '8.3 IndexedDB 基础', link: '/docs/computer-system/browser/8-storage/indexeddb' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟡 拓展了解',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: '1 V8 引擎基础',
+                      items: [
+                        { text: '1.1 解析、Ignition 解释器、TurboFan 编译器（JIT）', link: '/docs/computer-system/browser/9-optional/1-v8/jit-pipeline' },
+                        { text: '1.2 GC 垃圾回收机制（新生代/老生代）', link: '/docs/computer-system/browser/9-optional/1-v8/gc' }
+                      ]
+                    },
+                    {
+                      text: '2 渲染进阶',
+                      items: [
+                        { text: '2.1 图层划分规则、will-change', link: '/docs/computer-system/browser/9-optional/2-rendering/layers-will-change' },
+                        { text: '2.2 合成线程原理', link: '/docs/computer-system/browser/9-optional/2-rendering/compositor-thread' },
+                        { text: '2.3 虚拟 DOM 和浏览器原生渲染的关系', link: '/docs/computer-system/browser/9-optional/2-rendering/virtual-dom' }
+                      ]
+                    },
+                    {
+                      text: '3 网络相关浏览器能力',
+                      items: [
+                        { text: '3.1 Fetch、XMLHttpRequest', link: '/docs/computer-system/browser/9-optional/3-network/fetch-xhr' },
+                        { text: '3.2 WebSocket', link: '/docs/computer-system/browser/9-optional/3-network/websocket' },
+                        { text: '3.3 Service Worker 基础、离线缓存', link: '/docs/computer-system/browser/9-optional/3-network/service-worker-cache' }
+                      ]
+                    },
+                    {
+                      text: '4 其他 API',
+                      items: [
+                        { text: '4.1 requestAnimationFrame', link: '/docs/computer-system/browser/9-optional/4-apis/raf' },
+                        { text: '4.2 MutationObserver', link: '/docs/computer-system/browser/9-optional/4-apis/mutation-observer' },
+                        { text: '4.3 ResizeObserver', link: '/docs/computer-system/browser/9-optional/4-apis/resize-observer' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟢 可跳过',
+                  collapsed: true,
+                  items: [
+                    { text: '1 浏览器内核源码细节', link: '/docs/computer-system/browser/10-skip/kernel-source' },
+                    { text: '2 音频/视频底层编解码', link: '/docs/computer-system/browser/10-skip/media-codec' },
+                    { text: '3 复杂 WebGL 底层渲染管线', link: '/docs/computer-system/browser/10-skip/webgl-pipeline' },
+                    { text: '4 浏览器插件开发', link: '/docs/computer-system/browser/10-skip/plugin-dev' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '📚 Nginx（前端方向）',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/nginx/' },
+                {
+                  text: '🔴 核心必学',
+                  items: [
+                    {
+                      text: '1 Nginx 基础概念',
+                      items: [
+                        { text: '1.1 正向代理 vs 反向代理 ⭐', link: '/docs/computer-system/nginx/1-basics/forward-reverse-proxy' },
+                        { text: '1.2 Nginx 核心作用', link: '/docs/computer-system/nginx/1-basics/core-roles' },
+                        { text: '1.3 核心组成：master 进程 + worker 进程模型', link: '/docs/computer-system/nginx/1-basics/master-worker' },
+                        { text: '1.4 配置文件整体结构', link: '/docs/computer-system/nginx/1-basics/config-structure' }
+                      ]
+                    },
+                    {
+                      text: '2 Server & Location 匹配规则 ⭐',
+                      items: [
+                        { text: '2.1 server 块：虚拟主机、域名监听、端口', link: '/docs/computer-system/nginx/2-server-location/server-block' },
+                        { text: '2.2 location 匹配优先级', link: '/docs/computer-system/nginx/2-server-location/location-priority' },
+                        { text: '2.3 root 和 alias 的区别', link: '/docs/computer-system/nginx/2-server-location/root-vs-alias' },
+                        { text: '2.4 index 默认首页配置', link: '/docs/computer-system/nginx/2-server-location/index-default' }
+                      ]
+                    },
+                    {
+                      text: '3 SPA 单页应用路由支持（history 模式 ⭐）',
+                      items: [
+                        { text: '3.1 try_files 指令原理', link: '/docs/computer-system/nginx/3-spa-routing/try-files' },
+                        { text: '3.2 history 模式 404 问题解决方案', link: '/docs/computer-system/nginx/3-spa-routing/history-404' }
+                      ]
+                    },
+                    {
+                      text: '4 静态资源优化',
+                      items: [
+                        { text: '4.1 gzip 压缩', link: '/docs/computer-system/nginx/4-static-optimization/gzip' },
+                        { text: '4.2 静态缓存 Cache-Control / Expires', link: '/docs/computer-system/nginx/4-static-optimization/cache-headers' },
+                        { text: '4.3 资源跨域配置 CORS', link: '/docs/computer-system/nginx/4-static-optimization/cors' }
+                      ]
+                    },
+                    {
+                      text: '5 反向代理（proxy_pass）⭐',
+                      items: [
+                        { text: '5.1 proxy_pass 基础用法', link: '/docs/computer-system/nginx/5-reverse-proxy/proxy-pass-basics' },
+                        { text: '5.2 proxy_pass 末尾带 / 和不带 / 的区别', link: '/docs/computer-system/nginx/5-reverse-proxy/proxy-pass-trailing-slash' },
+                        { text: '5.3 代理透传请求头', link: '/docs/computer-system/nginx/5-reverse-proxy/proxy-headers' },
+                        { text: '5.4 前端解决接口跨域常用方案', link: '/docs/computer-system/nginx/5-reverse-proxy/cors-solutions' }
+                      ]
+                    },
+                    {
+                      text: '6 常用状态与排查',
+                      items: [
+                        { text: '6.1 常见状态码：403、404、499、502、504', link: '/docs/computer-system/nginx/6-troubleshooting/status-codes' },
+                        { text: '6.2 nginx -t 校验配置', link: '/docs/computer-system/nginx/6-troubleshooting/nginx-t' },
+                        { text: '6.3 reload / restart 区别', link: '/docs/computer-system/nginx/6-troubleshooting/reload-restart' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟡 拓展了解',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: '1 负载均衡 upstream',
+                      items: [
+                        { text: '1.1 upstream 基础配置', link: '/docs/computer-system/nginx/7-optional/1-upstream/basics' },
+                        { text: '1.2 默认轮询、ip_hash（会话保持）', link: '/docs/computer-system/nginx/7-optional/1-upstream/round-robin-ip-hash' },
+                        { text: '1.3 权重 weight 简单了解', link: '/docs/computer-system/nginx/7-optional/1-upstream/weight' }
+                      ]
+                    },
+                    {
+                      text: '2 HTTPS 配置基础',
+                      items: [
+                        { text: '2.1 ssl_certificate / ssl_certificate_key', link: '/docs/computer-system/nginx/7-optional/2-https/ssl-cert' },
+                        { text: '2.2 http 自动跳转 https', link: '/docs/computer-system/nginx/7-optional/2-https/http-to-https' },
+                        { text: '2.3 HSTS', link: '/docs/computer-system/nginx/7-optional/2-https/hsts' }
+                      ]
+                    },
+                    {
+                      text: '3 限流、防爬虫基础',
+                      items: [
+                        { text: '3.1 limit_req_zone 简单概念', link: '/docs/computer-system/nginx/7-optional/3-rate-limit/limit-req-zone' }
+                      ]
+                    },
+                    {
+                      text: '4 日志',
+                      items: [
+                        { text: '4.1 access_log 访问日志', link: '/docs/computer-system/nginx/7-optional/4-logging/access-log' },
+                        { text: '4.2 error_log 错误日志', link: '/docs/computer-system/nginx/7-optional/4-logging/error-log' }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  text: '🟢 可跳过',
+                  collapsed: true,
+                  items: [
+                    { text: '1 epoll 底层事件模型细节', link: '/docs/computer-system/nginx/8-skip/epoll' },
+                    { text: '2 源码、模块开发', link: '/docs/computer-system/nginx/8-skip/source-modules' },
+                    { text: '3 复杂健康检查、灰度发布、动态 upstream', link: '/docs/computer-system/nginx/8-skip/health-check-gray' },
+                    { text: '4 stream 四层代理、tcp 负载均衡', link: '/docs/computer-system/nginx/8-skip/stream-tcp' },
+                    { text: '5 复杂安全 WAF 规则', link: '/docs/computer-system/nginx/8-skip/waf-rules' }
+                  ]
+                }
+              ]
+            },
+            { text: '📚 🟢 程序员的自我修养：链接、装载与库', link: '/docs/computer-system/linkers-loaders' },
+            { text: '📚 🟢 数据库系统概念', link: '/docs/computer-system/database-systems' },
+            { text: '📚 🟢 深入 Linux 内核架构', link: '/docs/computer-system/linux-kernel' }
           ]
         }
       ],
@@ -715,18 +1329,18 @@ export default defineConfig({
           text: 'AI',
           items: [
             { text: '概述', link: '/docs/ai/' },
-            { text: '大模型与 Prompt 基础', link: '/docs/ai/llm-prompt' },
-            { text: 'RAG 与向量检索', link: '/docs/ai/rag' },
-            { text: 'Agent 概念与范式', link: '/docs/ai/agent-concepts' },
-            { text: '工具调用原理', link: '/docs/ai/tool-calling' },
-            { text: '高级 Prompt 与结构化输出', link: '/docs/ai/advanced-prompt' },
-            { text: 'RAG 进阶', link: '/docs/ai/rag-advanced' },
-            { text: 'Agent 规划与反思', link: '/docs/ai/agent-planning' },
-            { text: '记忆系统', link: '/docs/ai/memory' },
-            { text: '多模态能力', link: '/docs/ai/multimodal' },
-            { text: '微调与对齐', link: '/docs/ai/finetune-alignment' },
-            { text: '评测与红队', link: '/docs/ai/evaluation' },
-            { text: '推理加速与私有化部署', link: '/docs/ai/inference-deploy' }
+            { text: '📚 🔴 大模型与 Prompt 基础', link: '/docs/ai/llm-prompt' },
+            { text: '📚 🔴 RAG 与向量检索', link: '/docs/ai/rag' },
+            { text: '📚 🔴 Agent 概念与范式', link: '/docs/ai/agent-concepts' },
+            { text: '📚 🔴 工具调用原理', link: '/docs/ai/tool-calling' },
+            { text: '📚 🟡 高级 Prompt 与结构化输出', link: '/docs/ai/advanced-prompt' },
+            { text: '📚 🟡 RAG 进阶', link: '/docs/ai/rag-advanced' },
+            { text: '📚 🟡 Agent 规划与反思', link: '/docs/ai/agent-planning' },
+            { text: '📚 🟡 记忆系统', link: '/docs/ai/memory' },
+            { text: '📚 🟢 多模态能力', link: '/docs/ai/multimodal' },
+            { text: '📚 🟢 微调与对齐', link: '/docs/ai/finetune-alignment' },
+            { text: '📚 🟡 评测与红队', link: '/docs/ai/evaluation' },
+            { text: '📚 🟢 推理加速与私有化部署', link: '/docs/ai/inference-deploy' }
           ]
         }
       ],
@@ -735,15 +1349,15 @@ export default defineConfig({
           text: 'AI Agent 应用',
           items: [
             { text: '概述', link: '/docs/ai-agent/' },
-            { text: '场景选型与产品边界', link: '/docs/ai-agent/scenario-boundary' },
-            { text: 'Agent 架构落地', link: '/docs/ai-agent/architecture' },
-            { text: '工具设计与系统集成', link: '/docs/ai-agent/tool-integration' },
-            { text: '记忆与多轮状态', link: '/docs/ai-agent/memory-state' },
-            { text: '安全与权限控制', link: '/docs/ai-agent/security-permission' },
-            { text: '可靠性：重试、熔断、人工确认', link: '/docs/ai-agent/reliability' },
-            { text: '可观测与评测', link: '/docs/ai-agent/observability-eval' },
-            { text: '成本优化与模型路由', link: '/docs/ai-agent/cost-routing' },
-            { text: '多 Agent 协作实践', link: '/docs/ai-agent/multi-agent' }
+            { text: '📚 🔴 场景选型与产品边界', link: '/docs/ai-agent/scenario-boundary' },
+            { text: '📚 🔴 Agent 架构落地', link: '/docs/ai-agent/architecture' },
+            { text: '📚 🔴 工具设计与系统集成', link: '/docs/ai-agent/tool-integration' },
+            { text: '📚 🔴 记忆与多轮状态', link: '/docs/ai-agent/memory-state' },
+            { text: '📚 🔴 安全与权限控制', link: '/docs/ai-agent/security-permission' },
+            { text: '📚 🔴 可靠性：重试、熔断、人工确认', link: '/docs/ai-agent/reliability' },
+            { text: '📚 🔴 可观测与评测', link: '/docs/ai-agent/observability-eval' },
+            { text: '📚 🔴 成本优化与模型路由', link: '/docs/ai-agent/cost-routing' },
+            { text: '📚 🟡 多 Agent 协作实践', link: '/docs/ai-agent/multi-agent' }
           ]
         }
       ]
