@@ -60,7 +60,19 @@ export default defineConfig({
           text: '前端进阶',
           items: [
             { text: '概述', link: '/docs/advanced/' },
-            { text: '模块化', link: '/docs/advanced/module' },
+            {
+              text: '工程化',
+              collapsed: false,
+              items: [
+                { text: '模块化（基础前提）', link: '/docs/advanced/engineering/module' },
+                { text: '包管理工具', link: '/docs/advanced/engineering/package-manager' },
+                { text: '构建 & 打包工具（核心重点）', link: '/docs/advanced/engineering/bundler' },
+                { text: '代码质量 & 规范', link: '/docs/advanced/engineering/code-quality' },
+                { text: '框架工程体系', link: '/docs/advanced/engineering/framework' },
+                { text: '环境、配置与部署', link: '/docs/advanced/engineering/env-deploy' },
+                { text: '高级工程化方向（进阶）', link: '/docs/advanced/engineering/advanced' }
+              ]
+            },
             { text: '设计模式', link: '/docs/advanced/design-pattern' },
             { text: '性能优化', link: '/docs/advanced/performance-optimization' },
             { text: '安全性', link: '/docs/advanced/security' },
