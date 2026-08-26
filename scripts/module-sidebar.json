@@ -1,0 +1,345 @@
+[
+  {
+    "text": "1 模块化基础概念",
+    "items": [
+      {
+        "text": "1.1 什么是模块化",
+        "items": [
+          {
+            "text": "模块化解决的核心问题：全局污染、依赖管理、代码复用",
+            "link": "/docs/advanced/engineering/module/1-basics/1-1-what-is-module/core-problems"
+          },
+          {
+            "text": "模块的核心特性：独立作用域、按需导出、按需导入",
+            "link": "/docs/advanced/engineering/module/1-basics/1-1-what-is-module/module-features"
+          },
+          {
+            "text": "模块化 vs 组件化 vs 工程化 概念区分",
+            "link": "/docs/advanced/engineering/module/1-basics/1-1-what-is-module/vs-component-engineering"
+          }
+        ]
+      },
+      {
+        "text": "1.2 前端模块化发展史",
+        "items": [
+          {
+            "text": "原始阶段：全局 script、IIFE 自执行函数",
+            "link": "/docs/advanced/engineering/module/1-basics/1-2-history/global-script-iife"
+          },
+          {
+            "text": "社区规范阶段：AMD / CMD（require.js、sea.js）",
+            "link": "/docs/advanced/engineering/module/1-basics/1-2-history/amd-cmd"
+          },
+          {
+            "text": "Node 规范：CommonJS",
+            "link": "/docs/advanced/engineering/module/1-basics/1-2-history/commonjs"
+          },
+          {
+            "text": "ES 标准：ESM（ES6 Module，现代主流）",
+            "link": "/docs/advanced/engineering/module/1-basics/1-2-history/esm"
+          }
+        ]
+      },
+      {
+        "text": "1.3 模块缓存机制",
+        "items": [
+          {
+            "text": "模块单例缓存原理",
+            "link": "/docs/advanced/engineering/module/1-basics/1-3-cache/singleton-cache"
+          },
+          {
+            "text": "缓存带来的业务坑（公共状态污染）",
+            "link": "/docs/advanced/engineering/module/1-basics/1-3-cache/cache-pitfalls"
+          },
+          {
+            "text": "缓存清除方案",
+            "link": "/docs/advanced/engineering/module/1-basics/1-3-cache/cache-clear"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "2 四大模块规范核心语法 🔥",
+    "items": [
+      {
+        "text": "2.1 CommonJS（CJS，Node 传统规范）",
+        "items": [
+          {
+            "text": "核心 API：require()、module.exports、exports",
+            "link": "/docs/advanced/engineering/module/2-specs/2-1-commonjs/core-api"
+          },
+          {
+            "text": "动态特性：运行时解析、可写在 if/循环内",
+            "link": "/docs/advanced/engineering/module/2-specs/2-1-commonjs/dynamic"
+          },
+          {
+            "text": "导出值是值拷贝（不是引用）",
+            "link": "/docs/advanced/engineering/module/2-specs/2-1-commonjs/value-copy"
+          },
+          {
+            "text": "Node 模块查找规则（优先缓存 → 内置模块 → node_modules）",
+            "link": "/docs/advanced/engineering/module/2-specs/2-1-commonjs/resolve-rules"
+          },
+          {
+            "text": "缺点：不支持 Tree-Shaking、浏览器原生不识别",
+            "link": "/docs/advanced/engineering/module/2-specs/2-1-commonjs/limitations"
+          }
+        ]
+      },
+      {
+        "text": "2.2 ESM（ES Module，JS 语言标准 🔥）",
+        "items": [
+          {
+            "text": "基础导入导出：export、export default、import",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/import-export"
+          },
+          {
+            "text": "静态特性：编译期解析，不能动态写在条件里",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/static"
+          },
+          {
+            "text": "只读导入绑定（引用动态更新）",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/live-binding"
+          },
+          {
+            "text": "顶层 await（top-level await）",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/top-level-await"
+          },
+          {
+            "text": "import.meta 元信息",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/import-meta"
+          },
+          {
+            "text": "动态导入 import() → 返回 Promise，用于懒加载",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/dynamic-import"
+          },
+          {
+            "text": "浏览器启用 ESM：script type=\"module\"",
+            "link": "/docs/advanced/engineering/module/2-specs/2-2-esm/browser-esm"
+          }
+        ]
+      },
+      {
+        "text": "2.3 AMD 🟡",
+        "items": [
+          {
+            "text": "define、require 异步加载",
+            "link": "/docs/advanced/engineering/module/2-specs/2-3-amd/define-require"
+          },
+          {
+            "text": "适用场景：早年浏览器端 require.js",
+            "link": "/docs/advanced/engineering/module/2-specs/2-3-amd/requirejs"
+          }
+        ]
+      },
+      {
+        "text": "2.4 CMD 🟡",
+        "items": [
+          {
+            "text": "懒执行特性",
+            "link": "/docs/advanced/engineering/module/2-specs/2-4-cmd/lazy-execute"
+          },
+          {
+            "text": "sea.js，现已淘汰",
+            "link": "/docs/advanced/engineering/module/2-specs/2-4-cmd/seajs"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "3 ESM 与 CommonJS 核心差异 🔥",
+    "items": [
+      {
+        "text": "解析时机：静态编译(ESM) vs 运行时(CJS)",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/parse-timing"
+      },
+      {
+        "text": "导出本质：实时绑定 vs 值拷贝",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/export-nature"
+      },
+      {
+        "text": "Tree-Shaking 支持与否",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/tree-shaking"
+      },
+      {
+        "text": "循环依赖表现差异",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/circular-diff"
+      },
+      {
+        "text": "跨规范互导（ESM 导入 CJS、CJS 导入 ESM）",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/cross-import"
+      },
+      {
+        "text": "Node 下切换 ESM 方式（package.json \"type\":\"module\"）",
+        "link": "/docs/advanced/engineering/module/3-esm-vs-cjs/node-esm-switch"
+      }
+    ]
+  },
+  {
+    "text": "4 循环依赖问题 🔥",
+    "items": [
+      {
+        "text": "什么是循环依赖",
+        "link": "/docs/advanced/engineering/module/4-circular-dependency/what-is"
+      },
+      {
+        "text": "CommonJS 循环依赖表现（导出 undefined）",
+        "link": "/docs/advanced/engineering/module/4-circular-dependency/cjs-behavior"
+      },
+      {
+        "text": "ESM 循环依赖表现（实时绑定，不会直接 undefined）",
+        "link": "/docs/advanced/engineering/module/4-circular-dependency/esm-behavior"
+      },
+      {
+        "text": "如何排查循环依赖",
+        "link": "/docs/advanced/engineering/module/4-circular-dependency/debug"
+      },
+      {
+        "text": "工程规避方案（抽离公共类型/常量、重构依赖）",
+        "link": "/docs/advanced/engineering/module/4-circular-dependency/avoid"
+      }
+    ]
+  },
+  {
+    "text": "5 打包工具中的模块处理",
+    "items": [
+      {
+        "text": "5.1 模块解析机制",
+        "items": [
+          {
+            "text": "相对路径、绝对路径、裸模块标识符",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-1-resolution/path-types"
+          },
+          {
+            "text": "路径别名 paths 原理",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-1-resolution/paths-alias"
+          },
+          {
+            "text": "扩展名自动补全、目录 index 默认查找",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-1-resolution/extension-index"
+          },
+          {
+            "text": "externals 外部模块剥离",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-1-resolution/externals"
+          }
+        ]
+      },
+      {
+        "text": "5.2 Webpack 模块处理",
+        "items": [
+          {
+            "text": "构建依赖图",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-2-webpack/dependency-graph"
+          },
+          {
+            "text": "loader 处理非 JS 模块",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-2-webpack/loader"
+          },
+          {
+            "text": "chunk、bundle 概念",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-2-webpack/chunk-bundle"
+          },
+          {
+            "text": "Module Federation 模块联邦（跨应用模块共享）",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-2-webpack/module-federation"
+          }
+        ]
+      },
+      {
+        "text": "5.3 Vite 模块处理",
+        "items": [
+          {
+            "text": "dev 环境：直接浏览器原生 ESM",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-3-vite/dev-esm"
+          },
+          {
+            "text": "预构建 pre-bundle 原理（处理 node_modules 裸模块）",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-3-vite/pre-bundle"
+          },
+          {
+            "text": "build 环境基于 Rollup 打包",
+            "link": "/docs/advanced/engineering/module/5-bundler/5-3-vite/build-rollup"
+          }
+        ]
+      },
+      {
+        "text": "5.4 Rollup 模块特点",
+        "link": "/docs/advanced/engineering/module/5-bundler/rollup"
+      }
+    ]
+  },
+  {
+    "text": "6 模块类型与 TS / 类型声明 .d.ts",
+    "items": [
+      {
+        "text": "模块类型识别（type: module / commonjs）",
+        "link": "/docs/advanced/engineering/module/6-ts-dts/module-type"
+      },
+      {
+        "text": "类型导入 import type",
+        "link": "/docs/advanced/engineering/module/6-ts-dts/import-type"
+      },
+      {
+        "text": "declare module 第三方模块类型补充",
+        "link": "/docs/advanced/engineering/module/6-ts-dts/declare-module"
+      },
+      {
+        "text": "模块导出类型自动生成（declaration）",
+        "link": "/docs/advanced/engineering/module/6-ts-dts/declaration"
+      }
+    ]
+  },
+  {
+    "text": "7 工程化模块化最佳实践",
+    "items": [
+      {
+        "text": "目录分层规范（业务模块、工具模块、组件模块、类型模块）",
+        "link": "/docs/advanced/engineering/module/7-best-practices/directory-layer"
+      },
+      {
+        "text": "导出规范：优先命名导出还是默认导出",
+        "link": "/docs/advanced/engineering/module/7-best-practices/export-convention"
+      },
+      {
+        "text": "按需导出，避免全量导出影响 Tree-Shaking",
+        "link": "/docs/advanced/engineering/module/7-best-practices/tree-shaking-export"
+      },
+      {
+        "text": "模块粒度设计原则（不要过大/过碎）",
+        "link": "/docs/advanced/engineering/module/7-best-practices/granularity"
+      },
+      {
+        "text": "动态导入做路由懒加载、组件按需加载",
+        "link": "/docs/advanced/engineering/module/7-best-practices/dynamic-import"
+      },
+      {
+        "text": "monorepo 多包模块管理（pnpm workspace）🟡",
+        "link": "/docs/advanced/engineering/module/7-best-practices/monorepo"
+      }
+    ]
+  },
+  {
+    "text": "8 拓展内容 ⚪",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "模块沙箱、运行时模块（SystemJS）",
+        "link": "/docs/advanced/engineering/module/8-advanced/systemjs"
+      },
+      {
+        "text": "import maps（浏览器原生裸模块支持，无需打包工具）",
+        "link": "/docs/advanced/engineering/module/8-advanced/import-maps"
+      },
+      {
+        "text": "ES 模块兼容性降级方案",
+        "link": "/docs/advanced/engineering/module/8-advanced/compat"
+      },
+      {
+        "text": "模块性能优化：Tree-Shaking、分包策略",
+        "link": "/docs/advanced/engineering/module/8-advanced/performance"
+      }
+    ]
+  }
+]
