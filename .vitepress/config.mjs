@@ -50,8 +50,7 @@ export default defineConfig({
             { text: 'JavaScript', link: '/docs/base/javascript' },
             { text: '浏览器与网络', link: '/docs/base/browser-network' },
             { text: '请求与存储', link: '/docs/base/request-storage' },
-            { text: '工程化入门', link: '/docs/base/engineering' },
-                        {
+            {
               text: 'TypeScript 入门',
               collapsed: false,
               items: [
