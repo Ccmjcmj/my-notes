@@ -44,7 +44,14 @@ export default defineConfig({
         {
           text: '前端基础',
           items: [
-            { text: '概述', link: '/docs/base/' }
+            { text: '概述', link: '/docs/base/' },
+            { text: 'HTML', link: '/docs/base/html' },
+            { text: 'CSS', link: '/docs/base/css' },
+            { text: 'JavaScript', link: '/docs/base/javascript' },
+            { text: '浏览器与网络', link: '/docs/base/browser-network' },
+            { text: '请求与存储', link: '/docs/base/request-storage' },
+            { text: '工程化入门', link: '/docs/base/engineering' },
+            { text: 'TypeScript 入门', link: '/docs/base/typescript' }
           ]
         }
       ],
@@ -52,7 +59,13 @@ export default defineConfig({
         {
           text: '前端进阶',
           items: [
-            { text: '概述', link: '/docs/advanced/' }
+            { text: '概述', link: '/docs/advanced/' },
+            { text: '模块化', link: '/docs/advanced/module' },
+            { text: '设计模式', link: '/docs/advanced/design-pattern' },
+            { text: '性能优化', link: '/docs/advanced/performance-optimization' },
+            { text: '安全性', link: '/docs/advanced/security' },
+            { text: '架构设计', link: '/docs/advanced/architecture-design' },
+            { text: '代码规范', link: '/docs/advanced/code-style' }
           ]
         }
       ],
@@ -60,7 +73,18 @@ export default defineConfig({
         {
           text: '前端应用',
           items: [
-            { text: '概述', link: '/docs/application/' }
+            { text: '概述', link: '/docs/application/' },
+            { text: '框架实战踩坑', link: '/docs/application/framework-pitfalls' },
+            { text: '状态与路由落地', link: '/docs/application/state-routing' },
+            { text: '接口与鉴权', link: '/docs/application/api-auth' },
+            { text: '样式与移动端适配', link: '/docs/application/style-mobile' },
+            { text: '性能体验 checklist', link: '/docs/application/performance-checklist' },
+            { text: '工程协作与发布', link: '/docs/application/engineering-release' },
+            { text: '安全与监控', link: '/docs/application/security-monitoring' },
+            { text: '业务权限与复杂表单', link: '/docs/application/permission-forms' },
+            { text: '组件库与中后台表格', link: '/docs/application/component-tables' },
+            { text: '微前端与 WebView', link: '/docs/application/microfrontend-webview' },
+            { text: '测试与线上排查', link: '/docs/application/testing-troubleshooting' }
           ]
         }
       ],
@@ -68,7 +92,16 @@ export default defineConfig({
         {
           text: '后端基础',
           items: [
-            { text: '概述', link: '/docs/backend/' }
+            { text: '概述', link: '/docs/backend/' },
+            { text: 'Java 语言基础', link: '/docs/backend/java-basics' },
+            { text: '构建工具与工程结构', link: '/docs/backend/build-structure' },
+            { text: 'Spring / Spring Boot', link: '/docs/backend/spring-boot' },
+            { text: 'Spring MVC 与接口设计', link: '/docs/backend/spring-mvc' },
+            { text: 'MyBatis 与数据库', link: '/docs/backend/mybatis' },
+            { text: '事务与基础 SQL', link: '/docs/backend/transaction-sql' },
+            { text: '认证授权入门', link: '/docs/backend/auth' },
+            { text: 'Redis 入门', link: '/docs/backend/redis' },
+            { text: '日志、测试与多环境', link: '/docs/backend/logging-testing' }
           ]
         }
       ],
@@ -76,7 +109,17 @@ export default defineConfig({
         {
           text: '后端进阶',
           items: [
-            { text: '概述', link: '/docs/backend-advanced/' }
+            { text: '概述', link: '/docs/backend-advanced/' },
+            { text: 'JVM 与性能调优', link: '/docs/backend-advanced/jvm-tuning' },
+            { text: '并发编程进阶', link: '/docs/backend-advanced/concurrency' },
+            { text: '缓存与高并发设计', link: '/docs/backend-advanced/cache-concurrency' },
+            { text: '数据库进阶与分库分表', link: '/docs/backend-advanced/database-sharding' },
+            { text: '消息队列与最终一致性', link: '/docs/backend-advanced/mq-consistency' },
+            { text: '微服务架构', link: '/docs/backend-advanced/microservices' },
+            { text: '分布式事务与服务治理', link: '/docs/backend-advanced/distributed-tx' },
+            { text: '安全进阶', link: '/docs/backend-advanced/security' },
+            { text: '容器化与部署', link: '/docs/backend-advanced/container-deploy' },
+            { text: '可观测性', link: '/docs/backend-advanced/observability' }
           ]
         }
       ],
@@ -84,7 +127,15 @@ export default defineConfig({
         {
           text: '后端应用',
           items: [
-            { text: '概述', link: '/docs/backend-application/' }
+            { text: '概述', link: '/docs/backend-application/' },
+            { text: '接口契约与幂等', link: '/docs/backend-application/api-idempotent' },
+            { text: '事务失效与数据一致性', link: '/docs/backend-application/transaction-consistency' },
+            { text: '订单 / 库存 / 金额落地', link: '/docs/backend-application/order-inventory' },
+            { text: '缓存双写与热点问题', link: '/docs/backend-application/cache-pitfalls' },
+            { text: '鉴权越权与安全实践', link: '/docs/backend-application/auth-security' },
+            { text: 'MQ 与定时任务踩坑', link: '/docs/backend-application/mq-jobs' },
+            { text: '发布变更与回滚', link: '/docs/backend-application/release-rollback' },
+            { text: '排查协作与可观测落地', link: '/docs/backend-application/troubleshooting' }
           ]
         }
       ],
@@ -92,7 +143,15 @@ export default defineConfig({
         {
           text: '计算机体系知识',
           items: [
-            { text: '概述', link: '/docs/computer-system/' }
+            { text: '概述', link: '/docs/computer-system/' },
+            { text: '数据结构与算法', link: '/docs/computer-system/data-structures-algorithms' },
+            { text: '计算机组成 + 程序底层', link: '/docs/computer-system/computer-organization' },
+            { text: '操作系统', link: '/docs/computer-system/operating-system' },
+            { text: '计算机网络', link: '/docs/computer-system/computer-network' },
+            { text: '编译原理', link: '/docs/computer-system/compilers' },
+            { text: '程序员的自我修养：链接、装载与库', link: '/docs/computer-system/linkers-loaders' },
+            { text: '数据库系统概念', link: '/docs/computer-system/database-systems' },
+            { text: '深入 Linux 内核架构', link: '/docs/computer-system/linux-kernel' }
           ]
         }
       ],
@@ -100,7 +159,19 @@ export default defineConfig({
         {
           text: 'AI',
           items: [
-            { text: '概述', link: '/docs/ai/' }
+            { text: '概述', link: '/docs/ai/' },
+            { text: '大模型与 Prompt 基础', link: '/docs/ai/llm-prompt' },
+            { text: 'RAG 与向量检索', link: '/docs/ai/rag' },
+            { text: 'Agent 概念与范式', link: '/docs/ai/agent-concepts' },
+            { text: '工具调用原理', link: '/docs/ai/tool-calling' },
+            { text: '高级 Prompt 与结构化输出', link: '/docs/ai/advanced-prompt' },
+            { text: 'RAG 进阶', link: '/docs/ai/rag-advanced' },
+            { text: 'Agent 规划与反思', link: '/docs/ai/agent-planning' },
+            { text: '记忆系统', link: '/docs/ai/memory' },
+            { text: '多模态能力', link: '/docs/ai/multimodal' },
+            { text: '微调与对齐', link: '/docs/ai/finetune-alignment' },
+            { text: '评测与红队', link: '/docs/ai/evaluation' },
+            { text: '推理加速与私有化部署', link: '/docs/ai/inference-deploy' }
           ]
         }
       ],
@@ -108,7 +179,16 @@ export default defineConfig({
         {
           text: 'AI Agent 应用',
           items: [
-            { text: '概述', link: '/docs/ai-agent/' }
+            { text: '概述', link: '/docs/ai-agent/' },
+            { text: '场景选型与产品边界', link: '/docs/ai-agent/scenario-boundary' },
+            { text: 'Agent 架构落地', link: '/docs/ai-agent/architecture' },
+            { text: '工具设计与系统集成', link: '/docs/ai-agent/tool-integration' },
+            { text: '记忆与多轮状态', link: '/docs/ai-agent/memory-state' },
+            { text: '安全与权限控制', link: '/docs/ai-agent/security-permission' },
+            { text: '可靠性：重试、熔断、人工确认', link: '/docs/ai-agent/reliability' },
+            { text: '可观测与评测', link: '/docs/ai-agent/observability-eval' },
+            { text: '成本优化与模型路由', link: '/docs/ai-agent/cost-routing' },
+            { text: '多 Agent 协作实践', link: '/docs/ai-agent/multi-agent' }
           ]
         }
       ]

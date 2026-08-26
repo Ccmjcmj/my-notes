@@ -26,20 +26,20 @@ features:
     details: 项目实战与架构设计
   - title: 后端基础
     link: /docs/backend/ 
-    details: Node.js、数据库、API 设计
+    details: Java、Spring Boot、MySQL、API 设计
   - title: 后端进阶
     link: /docs/backend-advanced/ 
-    details: 微服务、部署、性能调优
+    details: JVM、微服务、高并发、部署与可观测性
   - title: 后端应用
     link: /docs/backend-application/ 
-    details: 后端项目实战与业务落地
+    details: 业务落地踩坑、幂等一致性与发布排查
   - title: 计算机体系知识
     link: /docs/computer-system/ 
     details: 操作系统、计算机网络、组成原理
   - title: ai
     link: /docs/ai/ 
-    details: 
+    details: 大模型、RAG、Agent 基础与进阶
   - title: ai agent应用
     link: /docs/ai-agent/ 
-    details: Agent 架构、工具调用与落地实践
+    details: Agent 架构落地、工具集成与可靠性实践
 ---
