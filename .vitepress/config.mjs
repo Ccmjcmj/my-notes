@@ -64,6 +64,7 @@ export default defineConfig({
               text: '工程化',
               collapsed: false,
               items: [
+                { text: '概述', link: '/docs/advanced/engineering/' },
                 { text: '模块化（基础前提）', link: '/docs/advanced/engineering/module' },
                 { text: '包管理工具', link: '/docs/advanced/engineering/package-manager' },
                 { text: '构建 & 打包工具（核心重点）', link: '/docs/advanced/engineering/bundler' },
@@ -159,7 +160,137 @@ export default defineConfig({
             { text: '数据结构与算法', link: '/docs/computer-system/data-structures-algorithms' },
             { text: '计算机组成 + 程序底层', link: '/docs/computer-system/computer-organization' },
             { text: '操作系统', link: '/docs/computer-system/operating-system' },
-            { text: '计算机网络', link: '/docs/computer-system/computer-network' },
+            {
+              text: '计算机网络',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/computer-system/network/' },
+                {
+                  text: '1 前置基础',
+                  items: [
+                    { text: '1.1 TCP/IP 四层模型', link: '/docs/computer-system/network/1-foundation/tcp-ip-model' },
+                    { text: '1.2 OSI 七层模型 🟡', link: '/docs/computer-system/network/1-foundation/osi-model' }
+                  ]
+                },
+                {
+                  text: '2 应用层 🔥',
+                  items: [
+                    {
+                      text: '2.1 HTTP',
+                      items: [
+                        { text: 'HTTP 特性：无状态', link: '/docs/computer-system/network/2-application/http/stateless' },
+                        { text: '请求报文、响应报文', link: '/docs/computer-system/network/2-application/http/message' },
+                        { text: '请求方法', link: '/docs/computer-system/network/2-application/http/methods' },
+                        { text: '状态码', link: '/docs/computer-system/network/2-application/http/status-code' },
+                        { text: 'HTTP 缓存', link: '/docs/computer-system/network/2-application/http/cache' },
+                        { text: 'Cookie / Session / Storage', link: '/docs/computer-system/network/2-application/http/storage' },
+                        { text: 'HTTP 版本', link: '/docs/computer-system/network/2-application/http/versions' },
+                        { text: '内容编码 gzip/br', link: '/docs/computer-system/network/2-application/http/encoding' }
+                      ]
+                    },
+                    {
+                      text: '2.2 HTTPS',
+                      items: [
+                        { text: 'HTTP 安全缺陷', link: '/docs/computer-system/network/2-application/https/security-flaws' },
+                        { text: '加密与数字证书', link: '/docs/computer-system/network/2-application/https/crypto-cert' },
+                        { text: 'TLS 握手流程', link: '/docs/computer-system/network/2-application/https/tls-handshake' },
+                        { text: 'HTTP 与 HTTPS 区别', link: '/docs/computer-system/network/2-application/https/http-vs-https' }
+                      ]
+                    },
+                    {
+                      text: '2.3 DNS',
+                      items: [
+                        { text: '域名解析作用', link: '/docs/computer-system/network/2-application/dns/overview' },
+                        { text: '递归查询、迭代查询', link: '/docs/computer-system/network/2-application/dns/query' },
+                        { text: 'DNS 缓存、hosts', link: '/docs/computer-system/network/2-application/dns/cache-hosts' },
+                        { text: 'DNS 劫持 🟡', link: '/docs/computer-system/network/2-application/dns/hijack' }
+                      ]
+                    },
+                    {
+                      text: '2.4 WebSocket',
+                      items: [
+                        { text: '与 HTTP 关系、握手', link: '/docs/computer-system/network/2-application/websocket/handshake' },
+                        { text: '适用场景', link: '/docs/computer-system/network/2-application/websocket/scenarios' },
+                        { text: '与轮询/长轮询对比', link: '/docs/computer-system/network/2-application/websocket/vs-polling' }
+                      ]
+                    },
+                    { text: '2.5 正向代理 & 反向代理', link: '/docs/computer-system/network/2-application/proxy' },
+                    { text: '2.6 其他应用协议 🟡', link: '/docs/computer-system/network/2-application/other-protocols' }
+                  ]
+                },
+                {
+                  text: '3 传输层 🔥',
+                  items: [
+                    {
+                      text: '3.1 TCP',
+                      items: [
+                        { text: 'TCP 特性', link: '/docs/computer-system/network/3-transport/tcp/features' },
+                        { text: '三次握手', link: '/docs/computer-system/network/3-transport/tcp/handshake' },
+                        { text: '四次挥手', link: '/docs/computer-system/network/3-transport/tcp/wave' },
+                        { text: '滑动窗口', link: '/docs/computer-system/network/3-transport/tcp/sliding-window' },
+                        { text: '拥塞控制 🟡', link: '/docs/computer-system/network/3-transport/tcp/congestion' }
+                      ]
+                    },
+                    {
+                      text: '3.2 UDP',
+                      items: [
+                        { text: 'UDP 特性', link: '/docs/computer-system/network/3-transport/udp/features' },
+                        { text: '使用场景', link: '/docs/computer-system/network/3-transport/udp/scenarios' },
+                        { text: 'TCP vs UDP 对比', link: '/docs/computer-system/network/3-transport/udp/vs-tcp' }
+                      ]
+                    },
+                    { text: '3.3 端口、Socket、多路分用', link: '/docs/computer-system/network/3-transport/port-socket' }
+                  ]
+                },
+                {
+                  text: '4 网络层 🟡',
+                  collapsed: true,
+                  items: [
+                    { text: 'IP 协议', link: '/docs/computer-system/network/4-network-layer/ip' },
+                    { text: 'ICMP（ping 原理）', link: '/docs/computer-system/network/4-network-layer/icmp' },
+                    { text: 'ARP 🟡', link: '/docs/computer-system/network/4-network-layer/arp' }
+                  ]
+                },
+                {
+                  text: '5 链路层 ⚪',
+                  collapsed: true,
+                  items: [
+                    { text: 'MAC 地址', link: '/docs/computer-system/network/5-link-layer/mac' },
+                    { text: '以太网基础', link: '/docs/computer-system/network/5-link-layer/ethernet' }
+                  ]
+                },
+                {
+                  text: '6 前端工程 & 性能实战 🔥',
+                  items: [
+                    { text: '6.1 浏览器完整请求生命周期', link: '/docs/computer-system/network/6-frontend-practice/request-lifecycle' },
+                    {
+                      text: '6.2 资源加载优化',
+                      items: [
+                        { text: 'CDN', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/cdn' },
+                        { text: 'preload / preconnect / prefetch', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/preload' },
+                        { text: '分包、懒加载', link: '/docs/computer-system/network/6-frontend-practice/resource-optimization/code-splitting' }
+                      ]
+                    },
+                    {
+                      text: '6.3 抓包工具',
+                      items: [
+                        { text: 'Chrome DevTools Network', link: '/docs/computer-system/network/6-frontend-practice/packet-capture/devtools' },
+                        { text: 'Whistle / Fiddler ⚪', link: '/docs/computer-system/network/6-frontend-practice/packet-capture/whistle-fiddler' }
+                      ]
+                    },
+                    { text: '6.4 线上问题排查', link: '/docs/computer-system/network/6-frontend-practice/troubleshooting' }
+                  ]
+                },
+                {
+                  text: '7 拓展内容 ⚪',
+                  collapsed: true,
+                  items: [
+                    { text: '负载均衡、网关', link: '/docs/computer-system/network/7-advanced/load-balancer-gateway' },
+                    { text: '前端安全 XSS、CSRF', link: '/docs/computer-system/network/7-advanced/frontend-security' }
+                  ]
+                }
+              ]
+            },
             { text: '编译原理', link: '/docs/computer-system/compilers' },
             { text: '程序员的自我修养：链接、装载与库', link: '/docs/computer-system/linkers-loaders' },
             { text: '数据库系统概念', link: '/docs/computer-system/database-systems' },

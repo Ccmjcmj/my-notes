@@ -1,0 +1,3 @@
+# HTTP 版本
+
+HTTP/1.0、HTTP/1.1、HTTP/2、HTTP/3（QUIC）演进与差异。
