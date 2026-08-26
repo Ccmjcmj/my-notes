@@ -51,7 +51,278 @@ export default defineConfig({
             { text: '浏览器与网络', link: '/docs/base/browser-network' },
             { text: '请求与存储', link: '/docs/base/request-storage' },
             { text: '工程化入门', link: '/docs/base/engineering' },
-            { text: 'TypeScript 入门', link: '/docs/base/typescript' }
+                        {
+              text: 'TypeScript 入门',
+              collapsed: false,
+              items: [
+                { text: '概述', link: '/docs/base/typescript/' },
+                { text: "1 TS 基础体系",
+                                  items: [
+                                    { text: "1.1 原始类型 & 顶层类型",
+                                      items: [
+                                        { text: "boolean / string / number / bigint / symbol / null / undefined", link: "/docs/base/typescript/1-basics/1-1-primitive/boolean-string-number" },
+                                        { text: "any / unknown / never / void", link: "/docs/base/typescript/1-basics/1-1-primitive/any-unknown-never-void" },
+                                        { text: "类型边界区别（any 和 unknown、never 和 void 核心差异）", link: "/docs/base/typescript/1-basics/1-1-primitive/type-boundaries" }
+                                      ],
+                                     },
+                                    { text: "1.2 引用类型",
+                                      items: [
+                                        { text: "对象类型 Object / 字面量对象类型", link: "/docs/base/typescript/1-basics/1-2-reference/object" },
+                                        { text: "数组类型：普通数组、只读数组 readonly[]、元组 Tuple、只读元组", link: "/docs/base/typescript/1-basics/1-2-reference/array-tuple" },
+                                        { text: "函数类型：函数签名、参数类型、返回值类型、可选参数、默认参数、剩余参数", link: "/docs/base/typescript/1-basics/1-2-reference/function" },
+                                        { text: "this 类型标注、this 参数", link: "/docs/base/typescript/1-basics/1-2-reference/this" }
+                                      ],
+                                     },
+                                    { text: "1.3 类型注解 vs 类型推断",
+                                      items: [
+                                        { text: "自动类型推断场景", link: "/docs/base/typescript/1-basics/1-3-inference/auto-inference" },
+                                        { text: "需要手动标注的场景", link: "/docs/base/typescript/1-basics/1-3-inference/manual-annotation" },
+                                        { text: "类型拓宽 & 类型收窄基础", link: "/docs/base/typescript/1-basics/1-3-inference/widening-narrowing" }
+                                      ],
+                                     },
+                                    { text: "1.4 类型断言",
+                                      items: [
+                                        { text: "as 断言、尖括号断言", link: "/docs/base/typescript/1-basics/1-4-assertion/as-assertion" },
+                                        { text: "非空断言 !", link: "/docs/base/typescript/1-basics/1-4-assertion/non-null-assertion" },
+                                        { text: "断言的风险与最佳实践", link: "/docs/base/typescript/1-basics/1-4-assertion/assertion-best-practices" }
+                                      ],
+                                     }
+                                  ],
+                                 },
+                { text: "2 类型定义核心语法 🔥",
+                                  items: [
+                                    { text: "2.1 Interface 接口",
+                                      items: [
+                                        { text: "属性可选、只读属性", link: "/docs/base/typescript/2-definition/2-1-interface/optional-readonly" },
+                                        { text: "索引签名（字符串索引、数字索引）", link: "/docs/base/typescript/2-definition/2-1-interface/index-signature" },
+                                        { text: "方法定义", link: "/docs/base/typescript/2-definition/2-1-interface/methods" },
+                                        { text: "接口继承 extends、多继承", link: "/docs/base/typescript/2-definition/2-1-interface/extends" },
+                                        { text: "接口合并（声明合并）", link: "/docs/base/typescript/2-definition/2-1-interface/declaration-merge" }
+                                      ],
+                                     },
+                                    { text: "2.2 Type 类型别名",
+                                      items: [
+                                        { text: "基础别名、联合类型、交叉类型", link: "/docs/base/typescript/2-definition/2-2-type/alias-union-intersection" },
+                                        { text: "与 Interface 的核心区别（重点面试）", link: "/docs/base/typescript/2-definition/2-2-type/vs-interface" },
+                                        { text: "递归类型", link: "/docs/base/typescript/2-definition/2-2-type/recursive" }
+                                      ],
+                                     },
+                                    { text: "2.3 枚举 Enum",
+                                      items: [
+                                        { text: "数字枚举、字符串枚举、异构枚举", link: "/docs/base/typescript/2-definition/2-3-enum/numeric-string-enum" },
+                                        { text: "常量枚举 const enum（编译后直接内联，无运行时对象）", link: "/docs/base/typescript/2-definition/2-3-enum/const-enum" },
+                                        { text: "枚举底层原理、枚举反向映射", link: "/docs/base/typescript/2-definition/2-3-enum/enum-internals" }
+                                      ],
+                                     },
+                                    { text: "2.4 泛型",
+                                      items: [
+                                        { text: "泛型基础：泛型函数、泛型接口、泛型类型别名、泛型类", link: "/docs/base/typescript/2-definition/2-4-generic/basics" },
+                                        { text: "泛型约束 extends", link: "/docs/base/typescript/2-definition/2-4-generic/extends-constraint" },
+                                        { text: "默认泛型参数", link: "/docs/base/typescript/2-definition/2-4-generic/default-params" },
+                                        { text: "多泛型参数", link: "/docs/base/typescript/2-definition/2-4-generic/multiple-params" },
+                                        { text: "泛型实战：工具函数、通用组件封装", link: "/docs/base/typescript/2-definition/2-4-generic/practical" }
+                                      ],
+                                     },
+                                    { text: "2.5 装饰器 Decorator 🟡",
+                                      items: [
+                                        { text: "类装饰器、方法装饰器、属性装饰器、参数装饰器", link: "/docs/base/typescript/2-definition/2-5-decorator/types" },
+                                        { text: "装饰器执行顺序", link: "/docs/base/typescript/2-definition/2-5-decorator/order" },
+                                        { text: "装饰器在 React/Nest 中的使用（新版本装饰器标准）", link: "/docs/base/typescript/2-definition/2-5-decorator/react-nest" }
+                                      ],
+                                     }
+                                  ],
+                                 },
+                { text: "3 类型运算与类型体操 🔥",
+                                  items: [
+                                    { text: "3.1 联合类型 |、交叉类型 &",
+                                      items: [
+                                        { text: "联合类型的分配性", link: "/docs/base/typescript/3-type-manipulation/3-1-union-intersection/distributive" },
+                                        { text: "交叉类型合并规则、冲突属性处理", link: "/docs/base/typescript/3-type-manipulation/3-1-union-intersection/merge-rules" },
+                                        { text: "可辨识联合（Discriminated Unions）", link: "/docs/base/typescript/3-type-manipulation/3-1-union-intersection/discriminated-unions" }
+                                      ],
+                                     },
+                                    { text: "3.2 类型收窄 Narrowing",
+                                      items: [
+                                        { text: "typeof / in / instanceof / 等值判断收窄", link: "/docs/base/typescript/3-type-manipulation/3-2-narrowing/typeof-in-instanceof" },
+                                        { text: "类型守卫（type predicate is）", link: "/docs/base/typescript/3-type-manipulation/3-2-narrowing/type-predicate" },
+                                        { text: "可辨识联合自动收窄", link: "/docs/base/typescript/3-type-manipulation/3-2-narrowing/discriminated-narrowing" }
+                                      ],
+                                     },
+                                    { text: "3.3 内置工具类型",
+                                      items: [
+                                        { text: "基础：Partial / Required / Readonly / Pick / Omit", link: "/docs/base/typescript/3-type-manipulation/3-3-utility-types/basic" },
+                                        { text: "联合处理：Exclude / Extract", link: "/docs/base/typescript/3-type-manipulation/3-3-utility-types/union" },
+                                        { text: "函数类型：Parameters / ReturnType / ConstructorParameters / InstanceType", link: "/docs/base/typescript/3-type-manipulation/3-3-utility-types/function" },
+                                        { text: "字符串模板类型：Capitalize / Uppercase / Lowercase / Uncapitalize", link: "/docs/base/typescript/3-type-manipulation/3-3-utility-types/string-template" },
+                                        { text: "元组工具：Awaited", link: "/docs/base/typescript/3-type-manipulation/3-3-utility-types/awaited" }
+                                      ],
+                                     },
+                                    { text: "3.4 模板字面量类型",
+                                      items: [
+                                        { text: "基础字符串模板类型", link: "/docs/base/typescript/3-type-manipulation/3-4-template-literal/basics" },
+                                        { text: "结合联合类型批量生成字符串字面量", link: "/docs/base/typescript/3-type-manipulation/3-4-template-literal/union-combination" },
+                                        { text: "高级字符串类型提取、解析", link: "/docs/base/typescript/3-type-manipulation/3-4-template-literal/advanced-parse" }
+                                      ],
+                                     },
+                                    { text: "3.5 索引访问、keyof、typeof 类型查询",
+                                      items: [
+                                        { text: "keyof 获取对象键联合", link: "/docs/base/typescript/3-type-manipulation/3-5-keyof-index/keyof" },
+                                        { text: "T[K] 索引访问类型", link: "/docs/base/typescript/3-type-manipulation/3-5-keyof-index/indexed-access" },
+                                        { text: "typeof 类型查询（区分运行时 typeof）", link: "/docs/base/typescript/3-type-manipulation/3-5-keyof-index/typeof-query" },
+                                        { text: "映射类型 Mapped Types", link: "/docs/base/typescript/3-type-manipulation/3-5-keyof-index/mapped-types" }
+                                      ],
+                                     },
+                                    { text: "3.6 条件类型 Conditional Types",
+                                      items: [
+                                        { text: "T extends U ? True : False", link: "/docs/base/typescript/3-type-manipulation/3-6-conditional/basics" },
+                                        { text: "条件类型分配行为", link: "/docs/base/typescript/3-type-manipulation/3-6-conditional/distributive" },
+                                        { text: "infer 类型推断（类型体操核心难点）", link: "/docs/base/typescript/3-type-manipulation/3-6-conditional/infer" },
+                                        { text: "infer 提取函数参数、返回值、元组元素、Promise 内部类型", link: "/docs/base/typescript/3-type-manipulation/3-6-conditional/infer-practical" }
+                                      ],
+                                     },
+                                    { text: "3.7 递归类型、循环约束 🟡",
+                                      items: [
+                                        { text: "深度递归对象类型", link: "/docs/base/typescript/3-type-manipulation/3-7-recursive/deep-recursive" },
+                                        { text: "递归条件类型", link: "/docs/base/typescript/3-type-manipulation/3-7-recursive/recursive-conditional" }
+                                      ],
+                                     }
+                                  ],
+                                 },
+                { text: "4 TS 模块、命名空间 & 类型导入导出",
+                                  items: [
+                                    { text: "4.1 TS 模块系统（ESM）",
+                                      items: [
+                                        { text: "import / export 类型导入导出（type import）", link: "/docs/base/typescript/4-module/4-1-esm/type-import-export" },
+                                        { text: "导入类型的两种写法 import type / inline type", link: "/docs/base/typescript/4-module/4-1-esm/import-type-syntax" },
+                                        { text: "模块解析策略（Classic / NodeNext / Bundler）", link: "/docs/base/typescript/4-module/4-1-esm/module-resolution" },
+                                        { text: "裸模块、路径映射 paths", link: "/docs/base/typescript/4-module/4-1-esm/paths" }
+                                      ],
+                                     },
+                                    { text: "4.2 命名空间 namespace",
+                                      items: [
+                                        { text: "命名空间使用场景", link: "/docs/base/typescript/4-module/4-2-namespace/usage" },
+                                        { text: "namespace 和 module 区别", link: "/docs/base/typescript/4-module/4-2-namespace/vs-module" }
+                                      ],
+                                     },
+                                    { text: "4.3 类型声明文件 .d.ts",
+                                      items: [
+                                        { text: "全局类型声明、模块声明 declare module", link: "/docs/base/typescript/4-module/4-3-dts/declare-module" },
+                                        { text: "declare var / declare function / declare class", link: "/docs/base/typescript/4-module/4-3-dts/declare-var-function-class" },
+                                        { text: "三斜线指令 /// <reference types=\"\" />", link: "/docs/base/typescript/4-module/4-3-dts/triple-slash" },
+                                        { text: "补充第三方缺失类型", link: "/docs/base/typescript/4-module/4-3-dts/third-party-types" }
+                                      ],
+                                     },
+                                    { text: "4.4 @types 类型包机制", link: "/docs/base/typescript/4-module/at-types" }
+                                  ],
+                                 },
+                { text: "5 tsconfig.json 配置 🔥",
+                                  items: [
+                                    { text: "5.1 核心编译选项",
+                                      items: [
+                                        { text: "target、module、moduleResolution", link: "/docs/base/typescript/5-tsconfig/5-1-compile/target-module" },
+                                        { text: "strict 严格模式（strictNullChecks 重中之重）", link: "/docs/base/typescript/5-tsconfig/5-1-compile/strict" },
+                                        { text: "skipLibCheck、esModuleInterop、allowSyntheticDefaultImports", link: "/docs/base/typescript/5-tsconfig/5-1-compile/skipLibCheck-interop" },
+                                        { text: "paths、baseUrl（路径别名）", link: "/docs/base/typescript/5-tsconfig/5-1-compile/paths-baseUrl" },
+                                        { text: "outDir、rootDir、declaration（生成 d.ts）、declarationMap", link: "/docs/base/typescript/5-tsconfig/5-1-compile/outDir-declaration" },
+                                        { text: "sourceMap", link: "/docs/base/typescript/5-tsconfig/5-1-compile/sourceMap" }
+                                      ],
+                                     },
+                                    { text: "5.2 类型检查相关选项",
+                                      items: [
+                                        { text: "noImplicitAny、noImplicitThis", link: "/docs/base/typescript/5-tsconfig/5-2-type-check/noImplicitAny" },
+                                        { text: "noUnusedLocals、noUnusedParameters", link: "/docs/base/typescript/5-tsconfig/5-2-type-check/noUnused" },
+                                        { text: "exactOptionalPropertyTypes", link: "/docs/base/typescript/5-tsconfig/5-2-type-check/exactOptionalPropertyTypes" }
+                                      ],
+                                     },
+                                    { text: "5.3 项目引用 Project References 🟡",
+                                      items: [
+                                        { text: "composite", link: "/docs/base/typescript/5-tsconfig/5-3-project-references/composite" },
+                                        { text: "跨项目类型依赖", link: "/docs/base/typescript/5-tsconfig/5-3-project-references/cross-project" }
+                                      ],
+                                     },
+                                    { text: "5.4 tsconfig 继承 extends", link: "/docs/base/typescript/5-tsconfig/extends" }
+                                  ],
+                                 },
+                { text: "6 TS 与前端框架结合实战",
+                                  items: [
+                                    { text: "6.1 React + TS",
+                                      items: [
+                                        { text: "FC、React.ReactNode、React.ReactElement", link: "/docs/base/typescript/6-framework/6-1-react/fc-node-element" },
+                                        { text: "Props 类型、children 类型", link: "/docs/base/typescript/6-framework/6-1-react/props-children" },
+                                        { text: "useState / useReducer / useCallback / useMemo 类型推导与手动标注", link: "/docs/base/typescript/6-framework/6-1-react/hooks" },
+                                        { text: "useRef 类型（DOM ref / 可变值 ref）", link: "/docs/base/typescript/6-framework/6-1-react/useRef" },
+                                        { text: "事件类型 React.MouseEvent / ChangeEvent 等", link: "/docs/base/typescript/6-framework/6-1-react/events" },
+                                        { text: "泛型组件封装", link: "/docs/base/typescript/6-framework/6-1-react/generic-component" }
+                                      ],
+                                     },
+                                    { text: "6.2 Vue + TS",
+                                      items: [
+                                        { text: "Vue3 defineProps / defineEmits 类型写法", link: "/docs/base/typescript/6-framework/6-2-vue/defineProps-emits" },
+                                        { text: "组合式 API ref/reactive 类型", link: "/docs/base/typescript/6-framework/6-2-vue/ref-reactive" },
+                                        { text: "泛型组件", link: "/docs/base/typescript/6-framework/6-2-vue/generic-component" },
+                                        { text: "全局组件类型扩充", link: "/docs/base/typescript/6-framework/6-2-vue/global-component" }
+                                      ],
+                                     },
+                                    { text: "6.3 工具库/公共组件库开发",
+                                      items: [
+                                        { text: "输出类型声明文件", link: "/docs/base/typescript/6-framework/6-3-library/declaration-output" },
+                                        { text: "泛型工具组件封装", link: "/docs/base/typescript/6-framework/6-3-library/generic-tools" },
+                                        { text: "兼容 CJS/ESM 类型", link: "/docs/base/typescript/6-framework/6-3-library/cjs-esm" }
+                                      ],
+                                     },
+                                    { text: "6.4 接口请求类型封装", link: "/docs/base/typescript/6-framework/api-types" }
+                                  ],
+                                 },
+                { text: "7 TS 高级工程实践、类型质量管控",
+                                  items: [
+                                    { text: "7.1 类型复用最佳实践",
+                                      items: [
+                                        { text: "业务通用类型抽离", link: "/docs/base/typescript/7-practice/7-1-reuse/common-types" },
+                                        { text: "从后端 JSON/Swagger 自动生成 TS 类型", link: "/docs/base/typescript/7-practice/7-1-reuse/swagger-generate" },
+                                        { text: "禁止滥用 any", link: "/docs/base/typescript/7-practice/7-1-reuse/avoid-any" }
+                                      ],
+                                     },
+                                    { text: "7.2 类型校验 & 运行时校验区分",
+                                      items: [
+                                        { text: "TS 仅静态检查，无运行时能力", link: "/docs/base/typescript/7-practice/7-2-runtime-validation/static-vs-runtime" },
+                                        { text: "Zod / Valibot / Yup 结合 TS 做运行时类型校验", link: "/docs/base/typescript/7-practice/7-2-runtime-validation/zod-valibot" },
+                                        { text: "类型守卫封装", link: "/docs/base/typescript/7-practice/7-2-runtime-validation/type-guards" }
+                                      ],
+                                     },
+                                    { text: "7.3 ESLint + TypeScript 类型规范",
+                                      items: [
+                                        { text: "@typescript-eslint 规则", link: "/docs/base/typescript/7-practice/7-3-eslint/typescript-eslint" },
+                                        { text: "禁止隐式 any、禁止 ts-ignore 滥用", link: "/docs/base/typescript/7-practice/7-3-eslint/no-ignore" },
+                                        { text: "提交前类型校验", link: "/docs/base/typescript/7-practice/7-3-eslint/pre-commit-check" }
+                                      ],
+                                     },
+                                    { text: "7.4 模块联邦、微前端下 TS 类型共享 🟡", link: "/docs/base/typescript/7-practice/module-federation" },
+                                    { text: "7.5 Monorepo + TS 多包类型管理 🟡", link: "/docs/base/typescript/7-practice/monorepo-types" }
+                                  ],
+                                 },
+                { text: "8 进阶拓展 ⚪",
+                                  collapsed: true,
+                                  items: [
+                                    { text: "8.1 TS 编译原理基础",
+                                      items: [
+                                        { text: "编译三阶段：解析 → 绑定 → 类型检查 → 生成 JS", link: "/docs/base/typescript/8-advanced/8-1-compiler/three-stages" },
+                                        { text: "AST 基础概念", link: "/docs/base/typescript/8-advanced/8-1-compiler/ast" },
+                                        { text: "类型系统底层设计思想", link: "/docs/base/typescript/8-advanced/8-1-compiler/type-system-design" }
+                                      ],
+                                     },
+                                    { text: "8.2 高级类型体操刷题",
+                                      items: [
+                                        { text: "实现内置工具类型", link: "/docs/base/typescript/8-advanced/8-2-challenges/implement-utility" },
+                                        { text: "复杂递归、infer 综合题型", link: "/docs/base/typescript/8-advanced/8-2-challenges/infer-complex" },
+                                        { text: "type-challenges 题库", link: "/docs/base/typescript/8-advanced/8-2-challenges/type-challenges" }
+                                      ],
+                                     },
+                                    { text: "8.3 插件开发：TS Language Service Plugin 🟡", link: "/docs/base/typescript/8-advanced/language-service-plugin" },
+                                    { text: "8.4 性能：大型项目 TS 类型编译速度优化", link: "/docs/base/typescript/8-advanced/compile-performance" }
+                                  ],
+                                 }
+              ]
+            }
           ]
         }
       ],

@@ -1,0 +1,3 @@
+# skipLibCheck、esModuleInterop、allowSyntheticDefaultImports
+
+本文介绍 skipLibCheck、esModuleInterop、allowSyntheticDefaultImports。
