@@ -10,12 +10,15 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      // { text: '前端基础', link: '/docs/base/index' },
-      // { text: '前端进阶', link: '/advanced/index' },
-      // { text: '前端应用', link: '/application/index' },
-      // { text: '后端基础', link: '/backend/index' },
-      // { text: '后端进阶', link: '/backend-advanced/index' },
-      // { text: 'ai', link: '/ai/index' }
+      { text: '前端基础', link: '/docs/base/' },
+      { text: '前端进阶', link: '/docs/advanced/' },
+      { text: '前端应用', link: '/docs/application/' },
+      { text: '后端基础', link: '/docs/backend/' },
+      { text: '后端进阶', link: '/docs/backend-advanced/' },
+      { text: '后端应用', link: '/docs/backend-application/' },
+      { text: '计算机体系知识', link: '/docs/computer-system/' },
+      { text: 'ai', link: '/docs/ai/' },
+      { text: 'ai agent应用', link: '/docs/ai-agent/' }
     ],
 
     sidebar: {
@@ -41,18 +44,71 @@ export default defineConfig({
         {
           text: '前端基础',
           items: [
-            { text: '概述', link: '/docs/base/' },
-            // 以后加页面就往这里补，例如：
-            // { text: 'HTML', link: '/docs/base/html' },
-            // { text: 'CSS', link: '/docs/base/css' }
+            { text: '概述', link: '/docs/base/' }
           ]
         }
       ],
-      '/advanced/': [
+      '/docs/advanced/': [
         {
           text: '前端进阶',
           items: [
-            { text: '概述', link: '/advanced/' }
+            { text: '概述', link: '/docs/advanced/' }
+          ]
+        }
+      ],
+      '/docs/application/': [
+        {
+          text: '前端应用',
+          items: [
+            { text: '概述', link: '/docs/application/' }
+          ]
+        }
+      ],
+      '/docs/backend/': [
+        {
+          text: '后端基础',
+          items: [
+            { text: '概述', link: '/docs/backend/' }
+          ]
+        }
+      ],
+      '/docs/backend-advanced/': [
+        {
+          text: '后端进阶',
+          items: [
+            { text: '概述', link: '/docs/backend-advanced/' }
+          ]
+        }
+      ],
+      '/docs/backend-application/': [
+        {
+          text: '后端应用',
+          items: [
+            { text: '概述', link: '/docs/backend-application/' }
+          ]
+        }
+      ],
+      '/docs/computer-system/': [
+        {
+          text: '计算机体系知识',
+          items: [
+            { text: '概述', link: '/docs/computer-system/' }
+          ]
+        }
+      ],
+      '/docs/ai/': [
+        {
+          text: 'AI',
+          items: [
+            { text: '概述', link: '/docs/ai/' }
+          ]
+        }
+      ],
+      '/docs/ai-agent/': [
+        {
+          text: 'AI Agent 应用',
+          items: [
+            { text: '概述', link: '/docs/ai-agent/' }
           ]
         }
       ]
